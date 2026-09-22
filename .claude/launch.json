@@ -4,7 +4,7 @@
     {
       "name": "paktalc-static-php",
       "runtimeExecutable": "php",
-      "runtimeArgs": ["-S", "localhost:8080", "-t", "out"],
+      "runtimeArgs": ["-S", "localhost:8080", "-t", "out", "scripts/php-router.php"],
       "port": 8080
     },
     {

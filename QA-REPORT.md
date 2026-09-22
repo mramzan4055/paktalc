@@ -13,7 +13,7 @@ Date: 22 September 2026. Build: Next.js 16.3.5 static export + PHP 8 RFQ backend
 | Robots | Allows all incl. OAI-SearchBot; references the sitemap; training-bot flag in `content/seo.ts` |
 | Redirects | 29 page rules + 102 image rules, single hop, absolute targets; no chains (enforced by postbuild) |
 | Accessibility | Lighthouse 100 on sampled pages; skip link, landmarks, one H1, focus rings, labelled controls, drawer focus trap, reduced motion |
-| Performance | CLS 0; real-browser FCP/LCP ≈ 0.25 s (content pages, local); Lighthouse mobile simulated 67–82 (framework hydration JS) |
+| Performance | CLS 0; measured FCP/LCP ≈ 0.8 s; Lighthouse mobile (clean profile, gzip router): Home 79, Talc lumps 76, Contact 90; A11y/BP/SEO 100. Homepage HTML 191 KB raw / 26 KB gz (was 396/66 before disabling inlineCss). Remaining gap = framework JS (~115 KB gz) |
 | Security | PHP: origin check, HMAC single-use token + min fill time, honeypot, per-IP rate limit, optional Turnstile, strict validation, CR/LF guard, escaped email body, secrets outside web root. Apache: CSP, nosniff, Referrer-Policy, Permissions-Policy, COOP, HSTS (HTTPS only), dotfile deny |
 | Form | Tested end-to-end (valid, invalid, too-fast, replay, foreign origin, honeypot, header injection, no-JS redirect) |
 | Content requiring verification | `CONTENT-VERIFICATION.md` |

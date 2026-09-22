@@ -13,9 +13,9 @@ npm run lint && npm run typecheck
 ```
 Test the full site including the form: copy `php-private/config.example.php` → `php-private/config.php` (set `secret`, `transport: 'log'`), then run:
 ```bash
-php -S localhost:8080 -t out
+npm run serve:php     # php -S with scripts/php-router.php: gzip, cache headers, 404, like Apache
 ```
-Emails are written to `php-private/storage/outbox/*.eml`.
+For Lighthouse, test via `npm run serve:php` in an Incognito window (extensions skew results). Emails are written to `php-private/storage/outbox/*.eml`.
 
 ## Deploying (Apache / cPanel)
 1. `npm run build`

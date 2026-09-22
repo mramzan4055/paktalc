@@ -9,8 +9,6 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   poweredByHeader: false,
   reactStrictMode: true,
-  // Inline the (small) global CSS into each HTML file: removes a render-blocking request on first load.
-  experimental: { inlineCss: true },
 };
 
 export default nextConfig;
