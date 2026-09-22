@@ -1,0 +1,2 @@
+# Safety net in case this folder is ever uploaded inside the web root by mistake.
+Require all denied

@@ -1,0 +1,2 @@
+# Library code is included by rfq.php / rfq-token.php only — never served directly.
+Require all denied

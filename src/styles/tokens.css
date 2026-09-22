@@ -1,0 +1,115 @@
+/* PakTalc design tokens — see DESIGN-SYSTEM.md */
+:root {
+  /* Palette */
+  --c-olive-700: #3f5022;
+  --c-olive-600: #566b2f;
+  --c-olive-500: #6e8740;
+  --c-olive-300: #a9ba7f;
+  --c-olive-100: #edf0e3;
+  --c-stone-50: #f7f6f2;
+  --c-stone-100: #efede6;
+  --c-stone-200: #e2dfd5;
+  --c-stone-300: #cfcbbe;
+  --c-stone-400: #a9a596;
+  --c-stone-600: #65624f;
+  --c-ink-900: #1a1c16;
+  --c-ink-800: #24271f;
+  --c-ink-700: #2e3228;
+  --c-ink-600: #3a3e33;
+  --c-white: #ffffff;
+  --c-error: #a3261b;
+  --c-success: #2f6b3a;
+
+  /* Semantic (light) */
+  --bg: var(--c-stone-50);
+  --surface: var(--c-white);
+  --surface-alt: var(--c-stone-100);
+  --text: var(--c-ink-900);
+  --text-muted: var(--c-stone-600);
+  --border: var(--c-stone-200);
+  --border-strong: var(--c-stone-300);
+  --accent: var(--c-olive-700);
+  --accent-strong: var(--c-olive-600);
+  --accent-soft: var(--c-olive-100);
+  --on-accent: var(--c-white);
+  --focus: var(--c-olive-500);
+
+  /* Type */
+  --font-display: var(--font-saira), "Saira", system-ui, sans-serif;
+  --font-body: var(--font-plex), "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-200: 0.78rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem);
+  --fs-600: clamp(1.28rem, 1.15rem + 0.55vw, 1.6rem);
+  --fs-700: clamp(1.65rem, 1.35rem + 1.35vw, 2.5rem);
+  --fs-800: clamp(2.1rem, 1.6rem + 2.3vw, 3.4rem);
+  --fs-900: clamp(2.45rem, 1.7rem + 3.5vw, 4.6rem);
+  --lh-tight: 1.08;
+  --lh-snug: 1.25;
+  --lh-body: 1.65;
+  --tracking-eyebrow: 0.14em;
+  --measure: 68ch;
+
+  /* Space */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --section-y: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+  --gutter: clamp(1rem, 0.4rem + 3vw, 2.5rem);
+
+  /* Layout */
+  --w-text: 44rem;
+  --w-content: 76rem;
+  --w-wide: 90rem;
+  --header-h: 4rem;
+
+  /* Shape */
+  --r-sm: 2px;
+  --r-md: 4px;
+  --r-pill: 999px;
+  --sh-1: 0 1px 2px rgb(26 28 22 / 0.06), 0 8px 24px -12px rgb(26 28 22 / 0.18);
+  --sh-2: 0 24px 64px -16px rgb(26 28 22 / 0.35);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.6, 0, 0.2, 1);
+  --dur-1: 160ms;
+  --dur-2: 320ms;
+  --dur-3: 700ms;
+  --dur-4: 1200ms;
+}
+
+@media (min-width: 64em) {
+  :root {
+    --header-h: 4.75rem;
+  }
+}
+
+.theme-dark {
+  --bg: var(--c-ink-900);
+  --surface: var(--c-ink-800);
+  --surface-alt: var(--c-ink-700);
+  --text: var(--c-stone-50);
+  --text-muted: #bdb9aa;
+  --border: var(--c-ink-600);
+  --border-strong: #52574a;
+  --accent: var(--c-olive-300);
+  --accent-strong: var(--c-olive-600);
+  --accent-soft: rgb(169 186 127 / 0.12);
+  --focus: var(--c-olive-300);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.theme-alt {
+  --bg: var(--c-stone-100);
+  background: var(--bg);
+}

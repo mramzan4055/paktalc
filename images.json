@@ -1,0 +1,3111 @@
+{
+ "images": {
+  "hero-main": {
+   "page": "home",
+   "section": "hero",
+   "asset_id": "A001",
+   "alt": "Excavator and truck working on the terraced benches of an open-pit mine in arid mountains.",
+   "caption": "Open-pit extraction benches at a mountain mine site.",
+   "title": "Open-Pit Mine with Excavator",
+   "fetchpriority": "high",
+   "loading": "eager",
+   "reuses_slot": null,
+   "variants": {
+    "desktop-21x9": {
+     "width": 1920,
+     "height": 823,
+     "webp": [
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-480w.webp 480w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-768w.webp 768w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1024w.webp 1024w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1440w.webp 1440w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-480w.avif 480w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-768w.avif 768w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1024w.avif 1024w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1440w.avif 1440w",
+      "/images/home/open-pit-mine-excavator-01-desktop-21x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1024,
+     "height": 1280,
+     "webp": [
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-480w.webp 480w",
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-768w.webp 768w",
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-480w.avif 480w",
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-768w.avif 768w",
+      "/images/home/open-pit-mine-excavator-01-mobile-4x5-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "hero-alt-slide": {
+   "page": "home",
+   "section": "hero",
+   "asset_id": "A085",
+   "alt": "Men gathered at the entrance of an adit cut into a white rock cliff among pine trees.",
+   "caption": "Entrance to an underground working in a white rock cliff.",
+   "title": "Mine Adit Entrance",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/home/mine-adit-entrance-01-banner-16x9-480w.webp 480w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-768w.webp 768w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1024w.webp 1024w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1440w.webp 1440w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/mine-adit-entrance-01-banner-16x9-480w.avif 480w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-768w.avif 768w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1024w.avif 1024w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1440w.avif 1440w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1920,
+     "height": 2400,
+     "webp": [
+      "/images/home/mine-adit-entrance-01-mobile-4x5-480w.webp 480w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-768w.webp 768w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1024w.webp 1024w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1440w.webp 1440w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/mine-adit-entrance-01-mobile-4x5-480w.avif 480w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-768w.avif 768w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1024w.avif 1024w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1440w.avif 1440w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "why-card-quality": {
+   "page": "home",
+   "section": "why-paktalc",
+   "asset_id": "A063",
+   "alt": "White talc lumps arranged on a black background.",
+   "caption": "",
+   "title": "Talc Lumps Close-Up",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 960,
+     "height": 960,
+     "webp": [
+      "/images/home/talc-lumps-close-up-01-card-1x1-480w.webp 480w",
+      "/images/home/talc-lumps-close-up-01-card-1x1-768w.webp 768w",
+      "/images/home/talc-lumps-close-up-01-card-1x1-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/home/talc-lumps-close-up-01-card-1x1-480w.avif 480w",
+      "/images/home/talc-lumps-close-up-01-card-1x1-768w.avif 768w",
+      "/images/home/talc-lumps-close-up-01-card-1x1-960w.avif 960w"
+     ]
+    },
+    "card-4x3": {
+     "width": 960,
+     "height": 720,
+     "webp": [
+      "/images/home/talc-lumps-close-up-01-card-4x3-480w.webp 480w",
+      "/images/home/talc-lumps-close-up-01-card-4x3-768w.webp 768w",
+      "/images/home/talc-lumps-close-up-01-card-4x3-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/home/talc-lumps-close-up-01-card-4x3-480w.avif 480w",
+      "/images/home/talc-lumps-close-up-01-card-4x3-768w.avif 768w",
+      "/images/home/talc-lumps-close-up-01-card-4x3-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "product-card-talc-lumps": {
+   "page": "home",
+   "section": "featured-products",
+   "asset_id": "A316",
+   "alt": "Close-up of white talc lumps.",
+   "caption": "",
+   "title": "Talc Lumps Close-Up",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 738,
+     "height": 738,
+     "webp": [
+      "/images/home/talc-lumps-close-up-02-card-1x1-480w.webp 480w",
+      "/images/home/talc-lumps-close-up-02-card-1x1-738w.webp 738w"
+     ],
+     "avif": [
+      "/images/home/talc-lumps-close-up-02-card-1x1-480w.avif 480w",
+      "/images/home/talc-lumps-close-up-02-card-1x1-738w.avif 738w"
+     ]
+    },
+    "card-4x3": {
+     "width": 984,
+     "height": 738,
+     "webp": [
+      "/images/home/talc-lumps-close-up-02-card-4x3-480w.webp 480w",
+      "/images/home/talc-lumps-close-up-02-card-4x3-768w.webp 768w",
+      "/images/home/talc-lumps-close-up-02-card-4x3-984w.webp 984w"
+     ],
+     "avif": [
+      "/images/home/talc-lumps-close-up-02-card-4x3-480w.avif 480w",
+      "/images/home/talc-lumps-close-up-02-card-4x3-768w.avif 768w",
+      "/images/home/talc-lumps-close-up-02-card-4x3-984w.avif 984w"
+     ]
+    }
+   }
+  },
+  "product-card-talc-powder": {
+   "page": "home",
+   "section": "featured-products",
+   "asset_id": "A204",
+   "alt": "25 kg SKZ Soap Stone / Talc Powder bag with product label.",
+   "caption": "Talc powder packed in 25 kg bags.",
+   "title": "SKZ Talc Powder 25 kg Bag",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/home/talc-powder-25kg-bag-skz-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/home/talc-powder-25kg-bag-skz-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "mining-teaser": {
+   "page": "home",
+   "section": "mining-operations-teaser",
+   "asset_id": "A120",
+   "alt": "Two workers inside a large underground chamber floored with broken white rock, with a blue drum and hoses.",
+   "caption": "Underground extraction chamber.",
+   "title": "Underground Mine Chamber",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/home/underground-mine-chamber-01-banner-16x9-480w.webp 480w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-768w.webp 768w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1024w.webp 1024w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1440w.webp 1440w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/underground-mine-chamber-01-banner-16x9-480w.avif 480w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-768w.avif 768w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1024w.avif 1024w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1440w.avif 1440w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1024,
+     "height": 1280,
+     "webp": [
+      "/images/home/underground-mine-chamber-01-mobile-4x5-480w.webp 480w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-768w.webp 768w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/home/underground-mine-chamber-01-mobile-4x5-480w.avif 480w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-768w.avif 768w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "sustainability-teaser": {
+   "page": "home",
+   "section": "sustainability-teaser",
+   "asset_id": "A105",
+   "alt": "Hillside mine site with waste dumps, a chute and a small shed among green vegetation.",
+   "caption": "",
+   "title": "Hillside Mine Site",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 709,
+     "height": 532,
+     "webp": [
+      "/images/home/mine-site-01-card-4x3-480w.webp 480w",
+      "/images/home/mine-site-01-card-4x3-709w.webp 709w"
+     ],
+     "avif": [
+      "/images/home/mine-site-01-card-4x3-480w.avif 480w",
+      "/images/home/mine-site-01-card-4x3-709w.avif 709w"
+     ]
+    }
+   }
+  },
+  "export-teaser": {
+   "page": "home",
+   "section": "global-export",
+   "asset_id": "A064",
+   "alt": "White jumbo bags stacked inside a blue shipping container.",
+   "caption": "Container loaded with bulk bags.",
+   "title": "Loaded Shipping Container",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 900,
+     "height": 1125,
+     "webp": [
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-480w.webp 480w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-768w.webp 768w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-900w.webp 900w"
+     ],
+     "avif": [
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-480w.avif 480w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-768w.avif 768w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-900w.avif 900w"
+     ]
+    }
+   }
+  },
+  "talc-hero": {
+   "page": "talc",
+   "section": "hero",
+   "asset_id": "A040",
+   "alt": "Men working on a stockpile of white talc lumps, one carrying a sack, with a truck behind.",
+   "caption": "",
+   "title": "Talc Lump Stockpile",
+   "fetchpriority": "high",
+   "loading": "eager",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-480w.webp 480w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-768w.webp 768w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1024w.webp 1024w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1440w.webp 1440w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-480w.avif 480w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-768w.avif 768w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1024w.avif 1024w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1440w.avif 1440w",
+      "/images/talc/talc-lumps-stockpile-02-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1229,
+     "height": 1536,
+     "webp": [
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-480w.webp 480w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-768w.webp 768w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-1024w.webp 1024w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-1229w.webp 1229w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-480w.avif 480w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-768w.avif 768w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-1024w.avif 1024w",
+      "/images/talc/talc-lumps-stockpile-02-mobile-4x5-1229w.avif 1229w"
+     ]
+    }
+   }
+  },
+  "talc-lumps-main": {
+   "page": "talc",
+   "section": "talc-lumps",
+   "asset_id": "A070",
+   "alt": "Close-up of white foliated talc lumps showing flat, layered plates.",
+   "caption": "Foliated structure typical of talc.",
+   "title": "Foliated Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 756,
+     "height": 756,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-06-card-1x1-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-06-card-1x1-756w.webp 756w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-06-card-1x1-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-06-card-1x1-756w.avif 756w"
+     ]
+    },
+    "card-4x3": {
+     "width": 1008,
+     "height": 756,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-06-card-4x3-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-06-card-4x3-768w.webp 768w",
+      "/images/talc/talc-lumps-close-up-06-card-4x3-1008w.webp 1008w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-06-card-4x3-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-06-card-4x3-768w.avif 768w",
+      "/images/talc/talc-lumps-close-up-06-card-4x3-1008w.avif 1008w"
+     ]
+    }
+   }
+  },
+  "talc-lumps-alt-1": {
+   "page": "talc",
+   "section": "talc-lumps",
+   "asset_id": "A025",
+   "alt": "Full-frame view of flaky white talc lumps.",
+   "caption": "",
+   "title": "White Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 768,
+     "height": 768,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-04-card-1x1-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-04-card-1x1-768w.webp 768w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-04-card-1x1-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-04-card-1x1-768w.avif 768w"
+     ]
+    },
+    "card-4x3": {
+     "width": 1024,
+     "height": 768,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-04-card-4x3-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-04-card-4x3-768w.webp 768w",
+      "/images/talc/talc-lumps-close-up-04-card-4x3-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-04-card-4x3-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-04-card-4x3-768w.avif 768w",
+      "/images/talc/talc-lumps-close-up-04-card-4x3-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "talc-lumps-alt-2": {
+   "page": "talc",
+   "section": "talc-lumps",
+   "asset_id": "A013",
+   "alt": "Close-up of pale, slightly translucent talc lumps.",
+   "caption": "",
+   "title": "Talc Lumps Close-Up",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 960,
+     "height": 960,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-03-card-1x1-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-03-card-1x1-768w.webp 768w",
+      "/images/talc/talc-lumps-close-up-03-card-1x1-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-03-card-1x1-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-03-card-1x1-768w.avif 768w",
+      "/images/talc/talc-lumps-close-up-03-card-1x1-960w.avif 960w"
+     ]
+    },
+    "card-4x3": {
+     "width": 960,
+     "height": 720,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-03-card-4x3-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-03-card-4x3-768w.webp 768w",
+      "/images/talc/talc-lumps-close-up-03-card-4x3-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-03-card-4x3-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-03-card-4x3-768w.avif 768w",
+      "/images/talc/talc-lumps-close-up-03-card-4x3-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "talc-lumps-alt-3": {
+   "page": "talc",
+   "section": "talc-lumps",
+   "asset_id": "A295",
+   "alt": "Close-up of flaky white talc lumps.",
+   "caption": "",
+   "title": "Flaky Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-1x1": {
+     "width": 395,
+     "height": 395,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-08-card-1x1-395w.webp 395w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-08-card-1x1-395w.avif 395w"
+     ]
+    },
+    "card-4x3": {
+     "width": 480,
+     "height": 360,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-08-card-4x3-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-08-card-4x3-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "talc-lumps-alt-4": {
+   "page": "talc",
+   "section": "talc-lumps",
+   "asset_id": "A032",
+   "alt": "Hand holding a flaky white talc lump above a pile of talc.",
+   "caption": "",
+   "title": "Talc Lump in Hand",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 720,
+     "height": 540,
+     "webp": [
+      "/images/talc/talc-lumps-close-up-05-card-4x3-480w.webp 480w",
+      "/images/talc/talc-lumps-close-up-05-card-4x3-720w.webp 720w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-close-up-05-card-4x3-480w.avif 480w",
+      "/images/talc/talc-lumps-close-up-05-card-4x3-720w.avif 720w"
+     ]
+    }
+   }
+  },
+  "talc-colour-grades": {
+   "page": "talc",
+   "section": "colour-grades",
+   "asset_id": "A270",
+   "alt": "Four talc lump samples shown side by side: coffee, white, grey and green.",
+   "caption": "Natural colour variations of talc lumps.",
+   "title": "Talc Lumps Colour Grades",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 886,
+     "height": 309,
+     "webp": [
+      "/images/talc/talc-lumps-colour-grades-01-480w.webp 480w",
+      "/images/talc/talc-lumps-colour-grades-01-768w.webp 768w",
+      "/images/talc/talc-lumps-colour-grades-01-886w.webp 886w"
+     ],
+     "avif": [
+      "/images/talc/talc-lumps-colour-grades-01-480w.avif 480w",
+      "/images/talc/talc-lumps-colour-grades-01-768w.avif 768w",
+      "/images/talc/talc-lumps-colour-grades-01-886w.avif 886w"
+     ]
+    }
+   }
+  },
+  "talc-powder-bag": {
+   "page": "talc",
+   "section": "talc-powder",
+   "asset_id": "A204",
+   "alt": "25 kg SKZ Soap Stone / Talc Powder bag with product label.",
+   "caption": "Talc powder packed in 25 kg bags.",
+   "title": "SKZ Talc Powder 25 kg Bag",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "product-card-talc-powder",
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/home/talc-powder-25kg-bag-skz-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/home/talc-powder-25kg-bag-skz-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "talc-powder-bags-stacked": {
+   "page": "talc",
+   "section": "talc-powder",
+   "asset_id": "A213",
+   "alt": "Stack of wrapped SKZ Soap Stone Talc Powder bags.",
+   "caption": "",
+   "title": "Stacked SKZ Talc Powder Bags",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/talc/talc-powder-bags-stacked-skz-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/talc/talc-powder-bags-stacked-skz-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "lab-report-agam-02": {
+   "page": "talc",
+   "section": "lab-reports",
+   "asset_id": "A091",
+   "alt": "Scanned SKZ Laboratory Peshawar analysis report for a talc mesh powder sample.",
+   "caption": "Laboratory analysis report for talc mesh powder.",
+   "title": "Talc Laboratory Analysis Report",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 1275,
+     "height": 1650,
+     "webp": [
+      "/images/talc/talc-laboratory-analysis-report-01-480w.webp 480w",
+      "/images/talc/talc-laboratory-analysis-report-01-768w.webp 768w",
+      "/images/talc/talc-laboratory-analysis-report-01-1024w.webp 1024w",
+      "/images/talc/talc-laboratory-analysis-report-01-1275w.webp 1275w"
+     ],
+     "avif": [
+      "/images/talc/talc-laboratory-analysis-report-01-480w.avif 480w",
+      "/images/talc/talc-laboratory-analysis-report-01-768w.avif 768w",
+      "/images/talc/talc-laboratory-analysis-report-01-1024w.avif 1024w",
+      "/images/talc/talc-laboratory-analysis-report-01-1275w.avif 1275w"
+     ]
+    }
+   }
+  },
+  "lab-report-dd": {
+   "page": "talc",
+   "section": "lab-reports",
+   "asset_id": "A092",
+   "alt": "Scanned SKZ Laboratory Peshawar analysis report for a talc powder sample above 400 mesh.",
+   "caption": "",
+   "title": "Talc Laboratory Analysis Report",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 1275,
+     "height": 1650,
+     "webp": [
+      "/images/talc/talc-laboratory-analysis-report-02-480w.webp 480w",
+      "/images/talc/talc-laboratory-analysis-report-02-768w.webp 768w",
+      "/images/talc/talc-laboratory-analysis-report-02-1024w.webp 1024w",
+      "/images/talc/talc-laboratory-analysis-report-02-1275w.webp 1275w"
+     ],
+     "avif": [
+      "/images/talc/talc-laboratory-analysis-report-02-480w.avif 480w",
+      "/images/talc/talc-laboratory-analysis-report-02-768w.avif 768w",
+      "/images/talc/talc-laboratory-analysis-report-02-1024w.avif 1024w",
+      "/images/talc/talc-laboratory-analysis-report-02-1275w.avif 1275w"
+     ]
+    }
+   }
+  },
+  "talc-origins": {
+   "page": "talc",
+   "section": "origins",
+   "asset_id": "A317",
+   "alt": "Diagram of talc types: Afghan talc from Khogyani, Agam and Shinwari; Pakistani talc from Haripur, Parachinar and Chitral.",
+   "caption": "",
+   "title": "Types of Talc by Origin",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 582,
+     "height": 351,
+     "webp": [
+      "/images/talc/talc-origins-diagram-01-480w.webp 480w",
+      "/images/talc/talc-origins-diagram-01-582w.webp 582w"
+     ],
+     "avif": [
+      "/images/talc/talc-origins-diagram-01-480w.avif 480w",
+      "/images/talc/talc-origins-diagram-01-582w.avif 582w"
+     ]
+    }
+   }
+  },
+  "mining-hero": {
+   "page": "mining-operations",
+   "section": "hero",
+   "asset_id": "A089",
+   "alt": "Miners inside a timber-supported underground adit, one holding a headlamp.",
+   "caption": "Timber-supported underground adit.",
+   "title": "Underground Mine Adit",
+   "fetchpriority": "high",
+   "loading": "eager",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/mining-operations/underground-mine-01-banner-16x9-480w.webp 480w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-768w.webp 768w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1024w.webp 1024w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1440w.webp 1440w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-01-banner-16x9-480w.avif 480w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-768w.avif 768w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1024w.avif 1024w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1440w.avif 1440w",
+      "/images/mining-operations/underground-mine-01-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1920,
+     "height": 2400,
+     "webp": [
+      "/images/mining-operations/underground-mine-01-mobile-4x5-480w.webp 480w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-768w.webp 768w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1024w.webp 1024w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1440w.webp 1440w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-01-mobile-4x5-480w.avif 480w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-768w.avif 768w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1024w.avif 1024w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1440w.avif 1440w",
+      "/images/mining-operations/underground-mine-01-mobile-4x5-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "exploration-1": {
+   "page": "mining-operations",
+   "section": "exploration",
+   "asset_id": "A083",
+   "alt": "Two geologists at the base of a large folded orange-brown rock face.",
+   "caption": "Geological survey of an exposed rock formation.",
+   "title": "Geological Survey at Folded Rock Face, Kurram",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1920,
+     "height": 1440,
+     "webp": [
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1440w.webp 1440w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1440w.avif 1440w",
+      "/images/mining-operations/geological-survey-rock-face-kurram-01-card-4x3-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "exploration-2": {
+   "page": "mining-operations",
+   "section": "exploration",
+   "asset_id": "A142",
+   "alt": "Geologist with backpack and field notes standing at a white rock face.",
+   "caption": "",
+   "title": "Geologist at Rock Face, Kurram",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/geologist-field-survey-kurram-01-card-4x3-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "exploration-3": {
+   "page": "mining-operations",
+   "section": "exploration",
+   "asset_id": "A084",
+   "alt": "Hand holding a geological compass-clinometer to measure rock orientation in low light.",
+   "caption": "Measuring strike and dip during a survey.",
+   "title": "Geological Compass Measurement",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1920,
+     "height": 1440,
+     "webp": [
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1440w.webp 1440w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1440w.avif 1440w",
+      "/images/mining-operations/geological-compass-measurement-01-card-4x3-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "exploration-4": {
+   "page": "mining-operations",
+   "section": "exploration",
+   "asset_id": "A139",
+   "alt": "Field team with backpacks among boulders on a forested mountain slope.",
+   "caption": "Field exploration in mountain terrain.",
+   "title": "Field Exploration Team",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/mining-operations/field-exploration-team-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/mining-operations/field-exploration-team-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/field-exploration-team-01-card-4x3-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "extraction-1": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A085",
+   "alt": "Men gathered at the entrance of an adit cut into a white rock cliff among pine trees.",
+   "caption": "Entrance to an underground working in a white rock cliff.",
+   "title": "Mine Adit Entrance",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "hero-alt-slide",
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/home/mine-adit-entrance-01-banner-16x9-480w.webp 480w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-768w.webp 768w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1024w.webp 1024w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1440w.webp 1440w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/mine-adit-entrance-01-banner-16x9-480w.avif 480w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-768w.avif 768w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1024w.avif 1024w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1440w.avif 1440w",
+      "/images/home/mine-adit-entrance-01-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1920,
+     "height": 2400,
+     "webp": [
+      "/images/home/mine-adit-entrance-01-mobile-4x5-480w.webp 480w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-768w.webp 768w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1024w.webp 1024w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1440w.webp 1440w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/mine-adit-entrance-01-mobile-4x5-480w.avif 480w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-768w.avif 768w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1024w.avif 1024w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1440w.avif 1440w",
+      "/images/home/mine-adit-entrance-01-mobile-4x5-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "extraction-2": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A120",
+   "alt": "Two workers inside a large underground chamber floored with broken white rock, with a blue drum and hoses.",
+   "caption": "Underground extraction chamber.",
+   "title": "Underground Mine Chamber",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "mining-teaser",
+   "variants": {
+    "banner-16x9": {
+     "width": 1920,
+     "height": 1080,
+     "webp": [
+      "/images/home/underground-mine-chamber-01-banner-16x9-480w.webp 480w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-768w.webp 768w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1024w.webp 1024w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1440w.webp 1440w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/home/underground-mine-chamber-01-banner-16x9-480w.avif 480w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-768w.avif 768w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1024w.avif 1024w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1440w.avif 1440w",
+      "/images/home/underground-mine-chamber-01-banner-16x9-1920w.avif 1920w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 1024,
+     "height": 1280,
+     "webp": [
+      "/images/home/underground-mine-chamber-01-mobile-4x5-480w.webp 480w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-768w.webp 768w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/home/underground-mine-chamber-01-mobile-4x5-480w.avif 480w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-768w.avif 768w",
+      "/images/home/underground-mine-chamber-01-mobile-4x5-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "extraction-3": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A118",
+   "alt": "Worker at a white and grey rock face inside an underground mine.",
+   "caption": "",
+   "title": "Underground Mine Face",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1707,
+     "height": 1280,
+     "webp": [
+      "/images/mining-operations/underground-mine-02-card-4x3-480w.webp 480w",
+      "/images/mining-operations/underground-mine-02-card-4x3-768w.webp 768w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1440w.webp 1440w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1707w.webp 1707w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-02-card-4x3-480w.avif 480w",
+      "/images/mining-operations/underground-mine-02-card-4x3-768w.avif 768w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1440w.avif 1440w",
+      "/images/mining-operations/underground-mine-02-card-4x3-1707w.avif 1707w"
+     ]
+    }
+   }
+  },
+  "extraction-4": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A137",
+   "alt": "Surveyors measuring with a tape inside a cream-coloured rock adit.",
+   "caption": "Measuring inside an underground working.",
+   "title": "Underground Survey Measurement",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/underground-mine-survey-01-card-4x3-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "extraction-5": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A087",
+   "alt": "Two men inspecting the pale rock walls inside an underground working.",
+   "caption": "",
+   "title": "Underground Mine Inspection",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1920,
+     "height": 1440,
+     "webp": [
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1440w.webp 1440w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1440w.avif 1440w",
+      "/images/mining-operations/underground-mine-inspection-01-card-4x3-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "extraction-6": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A082",
+   "alt": "Man standing on a slope of flat white talc fragments below a rock outcrop.",
+   "caption": "",
+   "title": "Talc Mine Site Scree",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1920,
+     "height": 1440,
+     "webp": [
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1024w.webp 1024w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1440w.webp 1440w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1024w.avif 1024w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1440w.avif 1440w",
+      "/images/mining-operations/talc-mine-site-scree-01-card-4x3-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "extraction-7": {
+   "page": "mining-operations",
+   "section": "extraction",
+   "asset_id": "A227",
+   "alt": "Timber-supported underground adit with rail track and a mine cart.",
+   "caption": "",
+   "title": "Timber-Supported Adit",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/underground-mine-04-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/underground-mine-04-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "sorting-banner": {
+   "page": "mining-operations",
+   "section": "sorting",
+   "asset_id": "A102",
+   "alt": "Workers in hard hats and safety vests sorting white talc lumps beside filled bulk bags.",
+   "caption": "Hand-sorting talc lumps before milling or bagging.",
+   "title": "Talc Sorting Yard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 986,
+     "height": 555,
+     "webp": [
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-768w.webp 768w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-986w.webp 986w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-768w.avif 768w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-banner-16x9-986w.avif 986w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 581,
+     "height": 726,
+     "webp": [
+      "/images/mining-operations/talc-lumps-hand-sorting-02-mobile-4x5-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-mobile-4x5-581w.webp 581w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-hand-sorting-02-mobile-4x5-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-02-mobile-4x5-581w.avif 581w"
+     ]
+    }
+   }
+  },
+  "sorting-1": {
+   "page": "mining-operations",
+   "section": "sorting",
+   "asset_id": "A015",
+   "alt": "Workers sorting white talc lumps by hand in a walled yard.",
+   "caption": "Talc lumps are hand-sorted by colour and quality.",
+   "title": "Hand-Sorting Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 768,
+     "height": 576,
+     "webp": [
+      "/images/mining-operations/talc-lumps-hand-sorting-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-01-card-4x3-768w.webp 768w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-hand-sorting-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-hand-sorting-01-card-4x3-768w.avif 768w"
+     ]
+    }
+   }
+  },
+  "sorting-2": {
+   "page": "mining-operations",
+   "section": "sorting",
+   "asset_id": "A012",
+   "alt": "Two inspectors in uniforms and caps checking white talc lumps with a worker during hand sorting.",
+   "caption": "Talc lumps checked by hand during sorting.",
+   "title": "Inspecting Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 960,
+     "height": 1200,
+     "webp": [
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-768w.webp 768w",
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-768w.avif 768w",
+      "/images/mining-operations/talc-lumps-quality-inspection-01-portrait-4x5-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "sorting-3": {
+   "page": "mining-operations",
+   "section": "sorting",
+   "asset_id": "A099",
+   "alt": "Man crouching to inspect a pile of white talc lumps.",
+   "caption": "",
+   "title": "Checking Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1024,
+     "height": 768,
+     "webp": [
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-768w.webp 768w",
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-768w.avif 768w",
+      "/images/mining-operations/talc-lumps-quality-inspection-02-card-4x3-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "sorting-4": {
+   "page": "mining-operations",
+   "section": "sorting",
+   "asset_id": "A166",
+   "alt": "White talc fragments with a geological hammer resting on top at a field site.",
+   "caption": "",
+   "title": "Talc Fragments with Geological Hammer",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 683,
+     "height": 854,
+     "webp": [
+      "/images/mining-operations/talc-lumps-field-sample-01-portrait-4x5-480w.webp 480w",
+      "/images/mining-operations/talc-lumps-field-sample-01-portrait-4x5-683w.webp 683w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-lumps-field-sample-01-portrait-4x5-480w.avif 480w",
+      "/images/mining-operations/talc-lumps-field-sample-01-portrait-4x5-683w.avif 683w"
+     ]
+    }
+   }
+  },
+  "crushing-1": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A017",
+   "alt": "Conveyor stackers building a stockpile of crushed white talc, with jumbo bags and a worker nearby.",
+   "caption": "Crushed talc stockpiled at a screening yard.",
+   "title": "Talc Crushing and Screening",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 640,
+     "height": 480,
+     "webp": [
+      "/images/mining-operations/talc-crushing-screening-conveyor-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/talc-crushing-screening-conveyor-01-card-4x3-640w.webp 640w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-crushing-screening-conveyor-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/talc-crushing-screening-conveyor-01-card-4x3-640w.avif 640w"
+     ]
+    }
+   }
+  },
+  "grinding-1": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A297",
+   "alt": "Raymond-type grinding mill beside stacked SKZ talc powder bags.",
+   "caption": "Grinding mill and packed talc powder.",
+   "title": "Grinding Mill with Talc Powder Bags",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 740,
+     "height": 555,
+     "webp": [
+      "/images/mining-operations/grinding-mill-talc-powder-bags-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/grinding-mill-talc-powder-bags-01-card-4x3-740w.webp 740w"
+     ],
+     "avif": [
+      "/images/mining-operations/grinding-mill-talc-powder-bags-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/grinding-mill-talc-powder-bags-01-card-4x3-740w.avif 740w"
+     ]
+    }
+   }
+  },
+  "grinding-2": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A212",
+   "alt": "Two staff standing beside a teal grinding mill in a brick processing shed.",
+   "caption": "Grinding mill in the processing plant.",
+   "title": "Grinding Mill",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/grinding-mill-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/grinding-mill-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "grinding-3": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A222",
+   "alt": "Silver grinding mill with piping and filled bags beside a powder stockpile.",
+   "caption": "Grinding mill and product collection.",
+   "title": "Grinding Mill with Piping",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/grinding-mill-02-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/grinding-mill-02-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "grinding-4": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A026",
+   "alt": "Grinding mill with cyclone and dust-collection hopper inside a processing shed, with two staff inspecting.",
+   "caption": "Grinding and dust-collection equipment in the processing shed.",
+   "title": "Grinding Mill and Dust Collector",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/grinding-mill-dust-collector-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/grinding-mill-dust-collector-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "micronizing-1": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A201",
+   "alt": "Micronizing classifier with cyclone and piping in a processing plant.",
+   "caption": "Fine-grinding and classifying equipment.",
+   "title": "Micronizing and Classifying Equipment",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/micronizing-classifier-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/micronizing-classifier-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "maintenance-1": {
+   "page": "mining-operations",
+   "section": "crushing-grinding",
+   "asset_id": "A202",
+   "alt": "Worker in helmet and mask servicing the grinding chamber of a mill.",
+   "caption": "Routine mill maintenance.",
+   "title": "Mill Maintenance",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/grinding-mill-maintenance-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/grinding-mill-maintenance-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "packaging-banner": {
+   "page": "mining-operations",
+   "section": "packaging",
+   "asset_id": "A310",
+   "alt": "Wall of stacked white SKZ talc powder bags in a processing yard.",
+   "caption": "Packed talc powder ready for dispatch.",
+   "title": "Stacked SKZ Talc Powder Bags",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1024,
+     "height": 576,
+     "webp": [
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-480w.webp 480w",
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-768w.webp 768w",
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-480w.avif 480w",
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-768w.avif 768w",
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-banner-16x9-1024w.avif 1024w"
+     ]
+    },
+    "mobile-4x5": {
+     "width": 479,
+     "height": 599,
+     "webp": [
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-mobile-4x5-479w.webp 479w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-powder-bags-stacked-skz-yard-01-mobile-4x5-479w.avif 479w"
+     ]
+    }
+   }
+  },
+  "packaging-1": {
+   "page": "mining-operations",
+   "section": "packaging",
+   "asset_id": "A215",
+   "alt": "Workers in white uniforms and helmets filling and stacking SKZ talc powder bags in a large plant.",
+   "caption": "Talc powder bagging line.",
+   "title": "Talc Powder Bagging Line",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/talc-powder-bagging-line-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/talc-powder-bagging-line-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "packaging-2": {
+   "page": "mining-operations",
+   "section": "packaging",
+   "asset_id": "A205",
+   "alt": "White powder being filled into a jumbo bag under a hopper and dust collector.",
+   "caption": "Bulk bag filling station.",
+   "title": "Jumbo Bag Filling",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/jumbo-bag-filling-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/jumbo-bag-filling-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "packaging-3": {
+   "page": "mining-operations",
+   "section": "packaging",
+   "asset_id": "A030",
+   "alt": "Shrink-wrapped pallets of stacked paper bags in a warehouse.",
+   "caption": "Bagged product palletized and wrapped for shipment.",
+   "title": "Palletized Bags in Warehouse",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 960,
+     "height": 720,
+     "webp": [
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-768w.webp 768w",
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-768w.avif 768w",
+      "/images/mining-operations/bagged-product-palletization-01-card-4x3-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "packaging-4": {
+   "page": "mining-operations",
+   "section": "packaging",
+   "asset_id": "A196",
+   "alt": "Two workers in white uniforms and helmets beside bagged product in a processing plant.",
+   "caption": "",
+   "title": "Plant Workers in Safety Uniforms",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/mining-operations/plant-workers-safety-uniforms-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/mining-operations/plant-workers-safety-uniforms-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "mesh-plant-peshawar": {
+   "page": "mining-operations",
+   "section": "our-plants",
+   "asset_id": "A298",
+   "alt": "Entrance of the SKZ Mining Company Peshawar mesh plant with its sign and a teal cyclone separator.",
+   "caption": "SKZ Mining Company mesh plant, Peshawar.",
+   "title": "SKZ Mining Mesh Plant, Peshawar",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 755,
+     "height": 566,
+     "webp": [
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-755w.webp 755w"
+     ],
+     "avif": [
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-755w.avif 755w"
+     ]
+    }
+   }
+  },
+  "lab-1": {
+   "page": "mining-operations",
+   "section": "quality-control",
+   "asset_id": "A114",
+   "alt": "Laboratory technician in a white coat operating an analytical instrument connected to a computer.",
+   "caption": "Sample testing in the company laboratory.",
+   "title": "Quality Testing Laboratory",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 1200,
+     "height": 1500,
+     "webp": [
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-480w.webp 480w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-768w.webp 768w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1024w.webp 1024w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1200w.webp 1200w"
+     ],
+     "avif": [
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-480w.avif 480w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-768w.avif 768w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1024w.avif 1024w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1200w.avif 1200w"
+     ]
+    }
+   }
+  },
+  "lab-2": {
+   "page": "mining-operations",
+   "section": "quality-control",
+   "asset_id": "A233",
+   "alt": "Laboratory technician placing samples into a drying oven.",
+   "caption": "Sample preparation in the laboratory.",
+   "title": "Laboratory Drying Oven",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/quality/quality-testing-laboratory-02-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/quality/quality-testing-laboratory-02-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "lab-3": {
+   "page": "mining-operations",
+   "section": "quality-control",
+   "asset_id": "A272",
+   "alt": "Technician using an analytical instrument and computer in the laboratory.",
+   "caption": "",
+   "title": "Laboratory Analyser",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 600,
+     "height": 450,
+     "webp": [
+      "/images/quality/quality-testing-laboratory-03-card-4x3-480w.webp 480w",
+      "/images/quality/quality-testing-laboratory-03-card-4x3-600w.webp 600w"
+     ],
+     "avif": [
+      "/images/quality/quality-testing-laboratory-03-card-4x3-480w.avif 480w",
+      "/images/quality/quality-testing-laboratory-03-card-4x3-600w.avif 600w"
+     ]
+    }
+   }
+  },
+  "lab-4": {
+   "page": "mining-operations",
+   "section": "quality-control",
+   "asset_id": "A273",
+   "alt": "Laboratory bench with drying ovens and staff at work.",
+   "caption": "",
+   "title": "Quality Control Laboratory",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 597,
+     "height": 448,
+     "webp": [
+      "/images/quality/quality-control-laboratory-01-card-4x3-480w.webp 480w",
+      "/images/quality/quality-control-laboratory-01-card-4x3-597w.webp 597w"
+     ],
+     "avif": [
+      "/images/quality/quality-control-laboratory-01-card-4x3-480w.avif 480w",
+      "/images/quality/quality-control-laboratory-01-card-4x3-597w.avif 597w"
+     ]
+    }
+   }
+  },
+  "export-1": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A064",
+   "alt": "White jumbo bags stacked inside a blue shipping container.",
+   "caption": "Container loaded with bulk bags.",
+   "title": "Loaded Shipping Container",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "export-teaser",
+   "variants": {
+    "portrait-4x5": {
+     "width": 900,
+     "height": 1125,
+     "webp": [
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-480w.webp 480w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-768w.webp 768w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-900w.webp 900w"
+     ],
+     "avif": [
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-480w.avif 480w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-768w.avif 768w",
+      "/images/home/jumbo-bags-container-loading-02-portrait-4x5-900w.avif 900w"
+     ]
+    }
+   }
+  },
+  "export-2": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A014",
+   "alt": "Worker loading white jumbo bags into a blue shipping container mounted on a truck.",
+   "caption": "Bulk bags being loaded into a container for dispatch.",
+   "title": "Container Loading of Jumbo Bags",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 768,
+     "height": 960,
+     "webp": [
+      "/images/logistics/jumbo-bags-container-loading-01-portrait-4x5-480w.webp 480w",
+      "/images/logistics/jumbo-bags-container-loading-01-portrait-4x5-768w.webp 768w"
+     ],
+     "avif": [
+      "/images/logistics/jumbo-bags-container-loading-01-portrait-4x5-480w.avif 480w",
+      "/images/logistics/jumbo-bags-container-loading-01-portrait-4x5-768w.avif 768w"
+     ]
+    }
+   }
+  },
+  "export-3": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A097",
+   "alt": "Pile of white talc lumps beside a yellow truck being loaded.",
+   "caption": "",
+   "title": "Loading Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 995,
+     "height": 746,
+     "webp": [
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-480w.webp 480w",
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-768w.webp 768w",
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-995w.webp 995w"
+     ],
+     "avif": [
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-480w.avif 480w",
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-768w.avif 768w",
+      "/images/logistics/talc-lumps-truck-loading-01-card-4x3-995w.avif 995w"
+     ]
+    }
+   }
+  },
+  "export-4": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A294",
+   "alt": "Decorated truck parked beside white talc stockpiles at the Peshawar warehouse yard.",
+   "caption": "",
+   "title": "Talc Stockyard, Peshawar Warehouse",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 745,
+     "height": 559,
+     "webp": [
+      "/images/logistics/talc-lumps-stockyard-truck-loading-01-card-4x3-480w.webp 480w",
+      "/images/logistics/talc-lumps-stockyard-truck-loading-01-card-4x3-745w.webp 745w"
+     ],
+     "avif": [
+      "/images/logistics/talc-lumps-stockyard-truck-loading-01-card-4x3-480w.avif 480w",
+      "/images/logistics/talc-lumps-stockyard-truck-loading-01-card-4x3-745w.avif 745w"
+     ]
+    }
+   }
+  },
+  "export-5": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A260",
+   "alt": "Corridor between tall rows of stacked white jumbo bags.",
+   "caption": "Bulk bags in storage.",
+   "title": "Jumbo Bag Warehouse Storage",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 600,
+     "height": 450,
+     "webp": [
+      "/images/logistics/jumbo-bags-warehouse-storage-01-card-4x3-480w.webp 480w",
+      "/images/logistics/jumbo-bags-warehouse-storage-01-card-4x3-600w.webp 600w"
+     ],
+     "avif": [
+      "/images/logistics/jumbo-bags-warehouse-storage-01-card-4x3-480w.avif 480w",
+      "/images/logistics/jumbo-bags-warehouse-storage-01-card-4x3-600w.avif 600w"
+     ]
+    }
+   }
+  },
+  "export-6": {
+   "page": "mining-operations",
+   "section": "transport-export",
+   "asset_id": "A011",
+   "alt": "Rows of filled white jumbo bags in an open storage yard with a forklift.",
+   "caption": "Bulk bags staged in the yard before dispatch.",
+   "title": "Jumbo Bags in Storage Yard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "banner-16x9": {
+     "width": 1024,
+     "height": 576,
+     "webp": [
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-480w.webp 480w",
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-768w.webp 768w",
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-480w.avif 480w",
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-768w.avif 768w",
+      "/images/logistics/jumbo-bags-storage-yard-01-banner-16x9-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "about-hero": {
+   "page": "about",
+   "section": "hero",
+   "asset_id": "A098",
+   "alt": "Team of workers and staff in helmets and high-visibility vests posing at a white rock quarry.",
+   "caption": "Site team in personal protective equipment.",
+   "title": "Mine Site Team in Safety Gear",
+   "fetchpriority": "high",
+   "loading": "eager",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 1010,
+     "height": 1263,
+     "webp": [
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-480w.webp 480w",
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-768w.webp 768w",
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-1010w.webp 1010w"
+     ],
+     "avif": [
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-480w.avif 480w",
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-768w.avif 768w",
+      "/images/about/team-mine-site-safety-gear-01-portrait-4x5-1010w.avif 1010w"
+     ]
+    },
+    "banner-16x9": {
+     "width": 1024,
+     "height": 576,
+     "webp": [
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-480w.webp 480w",
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-768w.webp 768w",
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-480w.avif 480w",
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-768w.avif 768w",
+      "/images/about/team-mine-site-safety-gear-01-banner-16x9-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "overview-office": {
+   "page": "about",
+   "section": "company-overview",
+   "asset_id": "A056",
+   "alt": "Two men standing in front of the SKZ Mining Company Peshawar banner with Pakistani and Japanese flags.",
+   "caption": "SKZ Mining Company office, Peshawar.",
+   "title": "SKZ Mining Company Peshawar Office",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 1280,
+     "height": 1600,
+     "webp": [
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-480w.webp 480w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-768w.webp 768w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-1024w.webp 1024w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-1280w.webp 1280w"
+     ],
+     "avif": [
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-480w.avif 480w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-768w.avif 768w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-1024w.avif 1024w",
+      "/images/about/skz-mining-office-peshawar-01-portrait-4x5-1280w.avif 1280w"
+     ]
+    }
+   }
+  },
+  "facility-mesh-plant": {
+   "page": "about",
+   "section": "facilities",
+   "asset_id": "A298",
+   "alt": "Entrance of the SKZ Mining Company Peshawar mesh plant with its sign and a teal cyclone separator.",
+   "caption": "SKZ Mining Company mesh plant, Peshawar.",
+   "title": "SKZ Mining Mesh Plant, Peshawar",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "mesh-plant-peshawar",
+   "variants": {
+    "card-4x3": {
+     "width": 755,
+     "height": 566,
+     "webp": [
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-480w.webp 480w",
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-755w.webp 755w"
+     ],
+     "avif": [
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-480w.avif 480w",
+      "/images/mining-operations/skz-mining-mesh-plant-signage-peshawar-01-card-4x3-755w.avif 755w"
+     ]
+    }
+   }
+  },
+  "team-director-1": {
+   "page": "about",
+   "section": "team",
+   "asset_id": "A076",
+   "alt": "Company director examining a white rock face at a mine site.",
+   "caption": "Field inspection of a rock face.",
+   "title": "Director Inspecting Rock Face",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 768,
+     "height": 576,
+     "webp": [
+      "/images/about/director-rock-face-inspection-01-card-4x3-480w.webp 480w",
+      "/images/about/director-rock-face-inspection-01-card-4x3-768w.webp 768w"
+     ],
+     "avif": [
+      "/images/about/director-rock-face-inspection-01-card-4x3-480w.avif 480w",
+      "/images/about/director-rock-face-inspection-01-card-4x3-768w.avif 768w"
+     ]
+    }
+   }
+  },
+  "team-director-2": {
+   "page": "about",
+   "section": "team",
+   "asset_id": "A257",
+   "alt": "Japanese technical expert seated on a white rock outcrop during a field visit.",
+   "caption": "Field visit by a Japanese technical partner.",
+   "title": "Japanese Expert Field Visit",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1920,
+     "height": 1440,
+     "webp": [
+      "/images/about/japanese-expert-field-visit-01-card-4x3-480w.webp 480w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-768w.webp 768w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1024w.webp 1024w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1440w.webp 1440w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1920w.webp 1920w"
+     ],
+     "avif": [
+      "/images/about/japanese-expert-field-visit-01-card-4x3-480w.avif 480w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-768w.avif 768w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1024w.avif 1024w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1440w.avif 1440w",
+      "/images/about/japanese-expert-field-visit-01-card-4x3-1920w.avif 1920w"
+     ]
+    }
+   }
+  },
+  "team-peshawar-manager": {
+   "page": "about",
+   "section": "team",
+   "asset_id": "A074",
+   "alt": "Manager seated at his desk in the SKZ Mining Company Peshawar office beneath the company sign.",
+   "caption": "SKZ Mining Company office, Peshawar.",
+   "title": "Peshawar Office",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 1280,
+     "height": 960,
+     "webp": [
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-480w.webp 480w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-768w.webp 768w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-1024w.webp 1024w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-1280w.webp 1280w"
+     ],
+     "avif": [
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-480w.avif 480w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-768w.avif 768w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-1024w.avif 1024w",
+      "/images/about/skz-mining-office-peshawar-manager-01-card-4x3-1280w.avif 1280w"
+     ]
+    }
+   }
+  },
+  "team-karachi-manager": {
+   "page": "about",
+   "section": "team",
+   "asset_id": "A117",
+   "alt": "Manager standing on a white mineral stockyard in front of processing sheds.",
+   "caption": "",
+   "title": "Manager at Stockyard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 960,
+     "height": 1200,
+     "webp": [
+      "/images/about/manager-stockyard-01-portrait-4x5-480w.webp 480w",
+      "/images/about/manager-stockyard-01-portrait-4x5-768w.webp 768w",
+      "/images/about/manager-stockyard-01-portrait-4x5-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/about/manager-stockyard-01-portrait-4x5-480w.avif 480w",
+      "/images/about/manager-stockyard-01-portrait-4x5-768w.avif 768w",
+      "/images/about/manager-stockyard-01-portrait-4x5-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "team-lab": {
+   "page": "about",
+   "section": "team",
+   "asset_id": "A114",
+   "alt": "Laboratory technician in a white coat operating an analytical instrument connected to a computer.",
+   "caption": "Sample testing in the company laboratory.",
+   "title": "Quality Testing Laboratory",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "lab-1",
+   "variants": {
+    "portrait-4x5": {
+     "width": 1200,
+     "height": 1500,
+     "webp": [
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-480w.webp 480w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-768w.webp 768w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1024w.webp 1024w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1200w.webp 1200w"
+     ],
+     "avif": [
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-480w.avif 480w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-768w.avif 768w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1024w.avif 1024w",
+      "/images/quality/quality-testing-laboratory-01-portrait-4x5-1200w.avif 1200w"
+     ]
+    }
+   }
+  },
+  "partners-1": {
+   "page": "about",
+   "section": "technical-partners",
+   "asset_id": "A280",
+   "alt": "Five Japanese technical experts in helmets at a quarry site.",
+   "caption": "",
+   "title": "Japanese Technical Experts",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "card-4x3": {
+     "width": 915,
+     "height": 686,
+     "webp": [
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-480w.webp 480w",
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-768w.webp 768w",
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-915w.webp 915w"
+     ],
+     "avif": [
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-480w.avif 480w",
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-768w.avif 768w",
+      "/images/about/japanese-technical-experts-site-visit-02-card-4x3-915w.avif 915w"
+     ]
+    }
+   }
+  },
+  "partners-2": {
+   "page": "about",
+   "section": "technical-partners",
+   "asset_id": "A219",
+   "alt": "Three staff members, two of them Japanese technical partners, standing in a processing plant.",
+   "caption": "",
+   "title": "Technical Team Plant Visit",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/about/technical-team-plant-visit-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/about/technical-team-plant-visit-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "partners-3": {
+   "page": "about",
+   "section": "technical-partners",
+   "asset_id": "A232",
+   "alt": "Three Japanese technical experts in helmets at a mine site.",
+   "caption": "",
+   "title": "Japanese Technical Experts on Site",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "portrait-4x5": {
+     "width": 480,
+     "height": 600,
+     "webp": [
+      "/images/about/japanese-technical-experts-site-visit-01-portrait-4x5-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/about/japanese-technical-experts-site-visit-01-portrait-4x5-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "affiliation-chart": {
+   "page": "affiliation",
+   "section": "structure",
+   "asset_id": "A292",
+   "alt": "Organisation chart linking Shokozan Japan to Afghan Talc (mining sites Agam and Khogyani, Jalalabad processing plant) and SKZ Company (Peshawar meshing and storage, Karachi sorting and packing).",
+   "caption": "",
+   "title": "SKZ Mining Affiliations Chart",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 1024,
+     "height": 542,
+     "webp": [
+      "/images/affiliation/skz-mining-company-structure-chart-01-480w.webp 480w",
+      "/images/affiliation/skz-mining-company-structure-chart-01-768w.webp 768w",
+      "/images/affiliation/skz-mining-company-structure-chart-01-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/affiliation/skz-mining-company-structure-chart-01-480w.avif 480w",
+      "/images/affiliation/skz-mining-company-structure-chart-01-768w.avif 768w",
+      "/images/affiliation/skz-mining-company-structure-chart-01-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "supply-chain-1": {
+   "page": "affiliation",
+   "section": "supply-chain",
+   "asset_id": "A305",
+   "alt": "Flow diagram: Afghan talc from open mining to the Morga stock area, Jalalabad factory and Torkham border, alongside Pakistani talc from open and tunnel mining to a stock area.",
+   "caption": "",
+   "title": "Talc Supply Chain: Mine to Border",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 623,
+     "height": 399,
+     "webp": [
+      "/images/affiliation/talc-supply-chain-diagram-01-480w.webp 480w",
+      "/images/affiliation/talc-supply-chain-diagram-01-623w.webp 623w"
+     ],
+     "avif": [
+      "/images/affiliation/talc-supply-chain-diagram-01-480w.avif 480w",
+      "/images/affiliation/talc-supply-chain-diagram-01-623w.avif 623w"
+     ]
+    }
+   }
+  },
+  "supply-chain-2": {
+   "page": "affiliation",
+   "section": "supply-chain",
+   "asset_id": "A306",
+   "alt": "Flow diagram: Peshawar warehouse for stock and segregation, then Karachi warehouse for packing and exporting.",
+   "caption": "",
+   "title": "Talc Supply Chain: Peshawar to Karachi",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 403,
+     "height": 320,
+     "webp": [
+      "/images/affiliation/talc-supply-chain-diagram-02-403w.webp 403w"
+     ],
+     "avif": [
+      "/images/affiliation/talc-supply-chain-diagram-02-403w.avif 403w"
+     ]
+    }
+   }
+  },
+  "sustainability-hero": {
+   "page": "sustainability",
+   "section": "hero",
+   "asset_id": "A105",
+   "alt": "Hillside mine site with waste dumps, a chute and a small shed among green vegetation.",
+   "caption": "",
+   "title": "Hillside Mine Site",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": "sustainability-teaser",
+   "variants": {
+    "card-4x3": {
+     "width": 709,
+     "height": 532,
+     "webp": [
+      "/images/home/mine-site-01-card-4x3-480w.webp 480w",
+      "/images/home/mine-site-01-card-4x3-709w.webp 709w"
+     ],
+     "avif": [
+      "/images/home/mine-site-01-card-4x3-480w.avif 480w",
+      "/images/home/mine-site-01-card-4x3-709w.avif 709w"
+     ]
+    }
+   }
+  },
+  "logo-horizontal": {
+   "page": "global",
+   "section": "header",
+   "asset_id": "A122",
+   "alt": "PakTalc logo: Talc Extraction, Processing, Export & Import.",
+   "caption": "",
+   "title": "PakTalc Logo",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 4213,
+     "height": 905,
+     "webp": [
+      "/images/brand/paktalc-logo-horizontal-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/paktalc-logo-horizontal-01.png"
+    }
+   }
+  },
+  "logo-stacked": {
+   "page": "global",
+   "section": "header",
+   "asset_id": "A123",
+   "alt": "PakTalc logo, stacked version.",
+   "caption": "",
+   "title": "PakTalc Logo (Stacked)",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 1975,
+     "height": 1599,
+     "webp": [
+      "/images/brand/paktalc-logo-stacked-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/paktalc-logo-stacked-01.png"
+    }
+   }
+  },
+  "logo-icon": {
+   "page": "global",
+   "section": "header",
+   "asset_id": "A124",
+   "alt": "PakTalc crystal logo icon.",
+   "caption": "",
+   "title": "PakTalc Logo Icon",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 1954,
+     "height": 905,
+     "webp": [
+      "/images/brand/paktalc-logo-icon-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/paktalc-logo-icon-01.png"
+    }
+   }
+  },
+  "favicon": {
+   "page": "global",
+   "section": "favicon",
+   "asset_id": "A264",
+   "alt": "PakTalc icon.",
+   "caption": "",
+   "title": "PakTalc Favicon",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 512,
+     "height": 512,
+     "webp": [
+      "/images/brand/paktalc-favicon-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/paktalc-favicon-01.png"
+    }
+   }
+  },
+  "favicon-icon": {
+   "page": "global",
+   "section": "favicon",
+   "asset_id": "A265",
+   "alt": "PakTalc crystal icon.",
+   "caption": "",
+   "title": "PakTalc Favicon Icon",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 512,
+     "height": 512,
+     "webp": [
+      "/images/brand/paktalc-favicon-icon-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/paktalc-favicon-icon-01.png"
+    }
+   }
+  },
+  "skz-logo": {
+   "page": "affiliation",
+   "section": "parent-brand",
+   "asset_id": "A095",
+   "alt": "SKZ Mining Company logo.",
+   "caption": "",
+   "title": "SKZ Mining Company Logo",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 309,
+     "height": 93,
+     "webp": [
+      "/images/brand/skz-mining-logo-horizontal-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/skz-mining-logo-horizontal-01.png"
+    }
+   }
+  },
+  "skz-logo-white": {
+   "page": "affiliation",
+   "section": "parent-brand",
+   "asset_id": "A094",
+   "alt": "SKZ Mining Company logo in white.",
+   "caption": "",
+   "title": "SKZ Mining Company Logo (White)",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "original": {
+     "width": 309,
+     "height": 93,
+     "webp": [
+      "/images/brand/skz-mining-logo-horizontal-white-01.webp"
+     ],
+     "avif": [],
+     "png": "/images/brand/skz-mining-logo-horizontal-white-01.png"
+    }
+   }
+  },
+  "gallery-01": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A088",
+   "alt": "Two men standing in a yard of white talc lump stockpiles.",
+   "caption": "",
+   "title": "Talc Stockyard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/gallery/talc-lumps-stockpile-05-480w.webp 480w",
+      "/images/gallery/talc-lumps-stockpile-05-768w.webp 768w",
+      "/images/gallery/talc-lumps-stockpile-05-1024w.webp 1024w",
+      "/images/gallery/talc-lumps-stockpile-05-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-stockpile-05-480w.avif 480w",
+      "/images/gallery/talc-lumps-stockpile-05-768w.avif 768w",
+      "/images/gallery/talc-lumps-stockpile-05-1024w.avif 1024w",
+      "/images/gallery/talc-lumps-stockpile-05-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-02": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A141",
+   "alt": "Soft-focus close-up of white talc lumps.",
+   "caption": "",
+   "title": "Talc Lumps Close-Up",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/gallery/talc-lumps-close-up-07-480w.webp 480w",
+      "/images/gallery/talc-lumps-close-up-07-768w.webp 768w",
+      "/images/gallery/talc-lumps-close-up-07-1024w.webp 1024w",
+      "/images/gallery/talc-lumps-close-up-07-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-close-up-07-480w.avif 480w",
+      "/images/gallery/talc-lumps-close-up-07-768w.avif 768w",
+      "/images/gallery/talc-lumps-close-up-07-1024w.avif 1024w",
+      "/images/gallery/talc-lumps-close-up-07-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-03": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A054",
+   "alt": "Heap of crushed white talc lumps.",
+   "caption": "",
+   "title": "Talc Lump Heap",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 720,
+     "height": 1280,
+     "webp": [
+      "/images/gallery/talc-lumps-stockpile-03-480w.webp 480w",
+      "/images/gallery/talc-lumps-stockpile-03-720w.webp 720w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-stockpile-03-480w.avif 480w",
+      "/images/gallery/talc-lumps-stockpile-03-720w.avif 720w"
+     ]
+    }
+   }
+  },
+  "gallery-04": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A067",
+   "alt": "Man holding a large white talc lump on top of a talc stockpile.",
+   "caption": "",
+   "title": "Talc Lump at Stockpile",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1024,
+     "height": 680,
+     "webp": [
+      "/images/gallery/talc-lumps-stockpile-04-480w.webp 480w",
+      "/images/gallery/talc-lumps-stockpile-04-768w.webp 768w",
+      "/images/gallery/talc-lumps-stockpile-04-1024w.webp 1024w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-stockpile-04-480w.avif 480w",
+      "/images/gallery/talc-lumps-stockpile-04-768w.avif 768w",
+      "/images/gallery/talc-lumps-stockpile-04-1024w.avif 1024w"
+     ]
+    }
+   }
+  },
+  "gallery-05": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A243",
+   "alt": "Workers in hard hats hand-sorting a pile of white talc lumps near a plant building.",
+   "caption": "",
+   "title": "Sorting Talc Lumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/talc-lumps-hand-sorting-03-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-hand-sorting-03-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-06": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A262",
+   "alt": "Men sorting white talc lumps in a walled yard beside bulk bags.",
+   "caption": "",
+   "title": "Sorting Talc in the Yard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 600,
+     "height": 529,
+     "webp": [
+      "/images/gallery/talc-lumps-hand-sorting-04-480w.webp 480w",
+      "/images/gallery/talc-lumps-hand-sorting-04-600w.webp 600w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-hand-sorting-04-480w.avif 480w",
+      "/images/gallery/talc-lumps-hand-sorting-04-600w.avif 600w"
+     ]
+    }
+   }
+  },
+  "gallery-07": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A267",
+   "alt": "Workers in safety vests sorting white talc lumps between large stockpiles and bulk bags.",
+   "caption": "",
+   "title": "Talc Sorting Team",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 270,
+     "webp": [
+      "/images/gallery/talc-lumps-hand-sorting-05-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/talc-lumps-hand-sorting-05-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-08": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A075",
+   "alt": "Conveyor stacker discharging crushed white talc onto a stockpile, with a worker in the foreground.",
+   "caption": "",
+   "title": "Talc Screening Yard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1000,
+     "height": 600,
+     "webp": [
+      "/images/gallery/talc-crushing-screening-conveyor-02-480w.webp 480w",
+      "/images/gallery/talc-crushing-screening-conveyor-02-768w.webp 768w",
+      "/images/gallery/talc-crushing-screening-conveyor-02-1000w.webp 1000w"
+     ],
+     "avif": [
+      "/images/gallery/talc-crushing-screening-conveyor-02-480w.avif 480w",
+      "/images/gallery/talc-crushing-screening-conveyor-02-768w.avif 768w",
+      "/images/gallery/talc-crushing-screening-conveyor-02-1000w.avif 1000w"
+     ]
+    }
+   }
+  },
+  "gallery-09": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A318",
+   "alt": "Screening plant with conveyors and white talc stockpiles, workers shovelling in the foreground.",
+   "caption": "",
+   "title": "Talc Screening Plant",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 960,
+     "height": 540,
+     "webp": [
+      "/images/gallery/talc-crushing-screening-conveyor-03-480w.webp 480w",
+      "/images/gallery/talc-crushing-screening-conveyor-03-768w.webp 768w",
+      "/images/gallery/talc-crushing-screening-conveyor-03-960w.webp 960w"
+     ],
+     "avif": [
+      "/images/gallery/talc-crushing-screening-conveyor-03-480w.avif 480w",
+      "/images/gallery/talc-crushing-screening-conveyor-03-768w.avif 768w",
+      "/images/gallery/talc-crushing-screening-conveyor-03-960w.avif 960w"
+     ]
+    }
+   }
+  },
+  "gallery-10": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A039",
+   "alt": "Wide view of an excavation site with workers and trucks on bare ground.",
+   "caption": "",
+   "title": "Mine Excavation Site",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/gallery/mine-excavation-site-01-480w.webp 480w",
+      "/images/gallery/mine-excavation-site-01-768w.webp 768w",
+      "/images/gallery/mine-excavation-site-01-1024w.webp 1024w",
+      "/images/gallery/mine-excavation-site-01-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/mine-excavation-site-01-480w.avif 480w",
+      "/images/gallery/mine-excavation-site-01-768w.avif 768w",
+      "/images/gallery/mine-excavation-site-01-1024w.avif 1024w",
+      "/images/gallery/mine-excavation-site-01-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-11": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A119",
+   "alt": "Broken white rock inside a dimly lit underground chamber.",
+   "caption": "",
+   "title": "Underground Mine Chamber",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 960,
+     "webp": [
+      "/images/gallery/underground-mine-03-480w.webp 480w",
+      "/images/gallery/underground-mine-03-768w.webp 768w",
+      "/images/gallery/underground-mine-03-1024w.webp 1024w",
+      "/images/gallery/underground-mine-03-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/underground-mine-03-480w.avif 480w",
+      "/images/gallery/underground-mine-03-768w.avif 768w",
+      "/images/gallery/underground-mine-03-1024w.avif 1024w",
+      "/images/gallery/underground-mine-03-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-12": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A138",
+   "alt": "Men inspecting the walls of a pale rock adit.",
+   "caption": "",
+   "title": "Underground Inspection",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 1080,
+     "webp": [
+      "/images/gallery/underground-mine-inspection-02-480w.webp 480w",
+      "/images/gallery/underground-mine-inspection-02-768w.webp 768w",
+      "/images/gallery/underground-mine-inspection-02-1024w.webp 1024w",
+      "/images/gallery/underground-mine-inspection-02-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/underground-mine-inspection-02-480w.avif 480w",
+      "/images/gallery/underground-mine-inspection-02-768w.avif 768w",
+      "/images/gallery/underground-mine-inspection-02-1024w.avif 1024w",
+      "/images/gallery/underground-mine-inspection-02-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-13": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A296",
+   "alt": "Men standing on white mineral dumps on a green hillside with wheelbarrows.",
+   "caption": "",
+   "title": "Mine Site Waste Dumps",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 731,
+     "height": 573,
+     "webp": [
+      "/images/gallery/mine-site-03-480w.webp 480w",
+      "/images/gallery/mine-site-03-731w.webp 731w"
+     ],
+     "avif": [
+      "/images/gallery/mine-site-03-480w.avif 480w",
+      "/images/gallery/mine-site-03-731w.avif 731w"
+     ]
+    }
+   }
+  },
+  "gallery-14": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A253",
+   "alt": "Hilltop mine site with a winch, wheelbarrows and visitors, green hills behind.",
+   "caption": "",
+   "title": "Hilltop Mine Site",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/mine-site-02-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/mine-site-02-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-15": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A066",
+   "alt": "Three men standing beside a white rock outcrop on a hillside road with a parked vehicle.",
+   "caption": "",
+   "title": "Site Visit at White Rock Outcrop",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 1440,
+     "height": 1920,
+     "webp": [
+      "/images/gallery/site-visit-01-480w.webp 480w",
+      "/images/gallery/site-visit-01-768w.webp 768w",
+      "/images/gallery/site-visit-01-1024w.webp 1024w",
+      "/images/gallery/site-visit-01-1440w.webp 1440w"
+     ],
+     "avif": [
+      "/images/gallery/site-visit-01-480w.avif 480w",
+      "/images/gallery/site-visit-01-768w.avif 768w",
+      "/images/gallery/site-visit-01-1024w.avif 1024w",
+      "/images/gallery/site-visit-01-1440w.avif 1440w"
+     ]
+    }
+   }
+  },
+  "gallery-16": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A065",
+   "alt": "Decorated Pakistani truck carrying a pink shipping container filled with jumbo bags.",
+   "caption": "Loaded container leaving the yard by road.",
+   "title": "Truck with Loaded Container",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 900,
+     "height": 1600,
+     "webp": [
+      "/images/gallery/jumbo-bags-container-loading-03-480w.webp 480w",
+      "/images/gallery/jumbo-bags-container-loading-03-768w.webp 768w",
+      "/images/gallery/jumbo-bags-container-loading-03-900w.webp 900w"
+     ],
+     "avif": [
+      "/images/gallery/jumbo-bags-container-loading-03-480w.avif 480w",
+      "/images/gallery/jumbo-bags-container-loading-03-768w.avif 768w",
+      "/images/gallery/jumbo-bags-container-loading-03-900w.avif 900w"
+     ]
+    }
+   }
+  },
+  "gallery-17": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A106",
+   "alt": "Blue shipping container with white jumbo bags loaded inside.",
+   "caption": "",
+   "title": "Container Loaded with Jumbo Bags",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 720,
+     "height": 1280,
+     "webp": [
+      "/images/gallery/jumbo-bags-container-loading-04-480w.webp 480w",
+      "/images/gallery/jumbo-bags-container-loading-04-720w.webp 720w"
+     ],
+     "avif": [
+      "/images/gallery/jumbo-bags-container-loading-04-480w.avif 480w",
+      "/images/gallery/jumbo-bags-container-loading-04-720w.avif 720w"
+     ]
+    }
+   }
+  },
+  "gallery-18": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A256",
+   "alt": "Two white jumbo bags loaded in a shipping container.",
+   "caption": "",
+   "title": "Loaded Container",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 896,
+     "height": 1072,
+     "webp": [
+      "/images/gallery/jumbo-bags-container-loading-05-480w.webp 480w",
+      "/images/gallery/jumbo-bags-container-loading-05-768w.webp 768w",
+      "/images/gallery/jumbo-bags-container-loading-05-896w.webp 896w"
+     ],
+     "avif": [
+      "/images/gallery/jumbo-bags-container-loading-05-480w.avif 480w",
+      "/images/gallery/jumbo-bags-container-loading-05-768w.avif 768w",
+      "/images/gallery/jumbo-bags-container-loading-05-896w.avif 896w"
+     ]
+    }
+   }
+  },
+  "gallery-19": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A216",
+   "alt": "Skid-steer loader lifting white jumbo bags beside a brick wall.",
+   "caption": "",
+   "title": "Jumbo Bag Handling",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/jumbo-bags-handling-loader-01-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/jumbo-bags-handling-loader-01-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-20": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A207",
+   "alt": "Teal cyclone separator installed in a processing shed.",
+   "caption": "",
+   "title": "Cyclone Separator",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/cyclone-separator-01-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/cyclone-separator-01-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-21": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A218",
+   "alt": "Two teal cyclone separators in a processing shed.",
+   "caption": "",
+   "title": "Twin Cyclone Separators",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/cyclone-separator-02-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/cyclone-separator-02-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-22": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A223",
+   "alt": "Three men inspecting a mill and cyclone assembly in a processing shed.",
+   "caption": "",
+   "title": "Mill Inspection",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/grinding-mill-03-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/grinding-mill-03-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-23": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A231",
+   "alt": "Machinery on a processing plant floor.",
+   "caption": "",
+   "title": "Processing Plant Machinery",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/processing-plant-machinery-01-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/processing-plant-machinery-01-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-24": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A234",
+   "alt": "Industrial machinery in a large processing plant.",
+   "caption": "",
+   "title": "Processing Plant Machinery",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/processing-plant-machinery-02-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/processing-plant-machinery-02-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-25": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A208",
+   "alt": "Teal duct and filter column beside bagged product in a processing shed.",
+   "caption": "",
+   "title": "Processing Equipment",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/processing-equipment-01-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/processing-equipment-01-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-26": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A220",
+   "alt": "Two men standing in a yard of filled jumbo bags.",
+   "caption": "",
+   "title": "Technical Team at Bag Yard",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 480,
+     "height": 576,
+     "webp": [
+      "/images/gallery/technical-team-stockyard-01-480w.webp 480w"
+     ],
+     "avif": [
+      "/images/gallery/technical-team-stockyard-01-480w.avif 480w"
+     ]
+    }
+   }
+  },
+  "gallery-27": {
+   "page": "gallery",
+   "section": "grid",
+   "asset_id": "A258",
+   "alt": "Japanese technical expert standing beside a small adit entrance in a rock face.",
+   "caption": "",
+   "title": "Japanese Expert at Adit Entrance",
+   "fetchpriority": null,
+   "loading": "lazy",
+   "reuses_slot": null,
+   "variants": {
+    "gallery": {
+     "width": 618,
+     "height": 1080,
+     "webp": [
+      "/images/gallery/japanese-expert-field-visit-02-480w.webp 480w",
+      "/images/gallery/japanese-expert-field-visit-02-618w.webp 618w"
+     ],
+     "avif": [
+      "/images/gallery/japanese-expert-field-visit-02-480w.avif 480w",
+      "/images/gallery/japanese-expert-field-visit-02-618w.avif 618w"
+     ]
+    }
+   }
+  }
+ },
+ "og": {
+  "home": {
+   "file": "og/og-home.jpg",
+   "w": 1200,
+   "h": 630,
+   "asset": "A001",
+   "alt": "Excavator and truck working on the terraced benches of an open-pit mine in arid mountains."
+  },
+  "talc": {
+   "file": "og/og-talc.jpg",
+   "w": 1200,
+   "h": 630,
+   "asset": "A040",
+   "alt": "Men working on a stockpile of white talc lumps, one carrying a sack, with a truck behind."
+  },
+  "mining-operations": {
+   "file": "og/og-mining-operations.jpg",
+   "w": 1200,
+   "h": 630,
+   "asset": "A089",
+   "alt": "Miners inside a timber-supported underground adit, one holding a headlamp."
+  },
+  "about": {
+   "file": "og/og-about.jpg",
+   "w": 1080,
+   "h": 567,
+   "asset": "A098",
+   "alt": "Team of workers and staff in helmets and high-visibility vests posing at a white rock quarry."
+  },
+  "quality": {
+   "file": "og/og-quality.jpg",
+   "w": 1200,
+   "h": 630,
+   "asset": "A114",
+   "alt": "Laboratory technician in a white coat operating an analytical instrument connected to a computer."
+  },
+  "affiliation": {
+   "file": "og/og-affiliation.jpg",
+   "w": 755,
+   "h": 396,
+   "asset": "A298",
+   "alt": "Entrance of the SKZ Mining Company Peshawar mesh plant with its sign and a teal cyclone separator."
+  },
+  "gallery": {
+   "file": "og/og-gallery.jpg",
+   "w": 1200,
+   "h": 630,
+   "asset": "A088",
+   "alt": "Two men standing in a yard of white talc lump stockpiles."
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "paktalc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PakTalc.com — talc division of SKZ Mining Company Pvt. Ltd.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/postbuild.mjs",
+    "start": "npx serve out",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.5",
+    "typescript": "^5.9.3"
+  }
+}
