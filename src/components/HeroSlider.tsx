@@ -1,4 +1,6 @@
+import ReactDOM from "react-dom";
 import { heroSlides } from "@content/hero";
+import { getSlot, getVariant, largest, srcsetOf } from "@/lib/images";
 import { Picture } from "./Picture";
 import { Button } from "./ui";
 import { HeroSliderController } from "./HeroSliderController";
@@ -8,6 +10,31 @@ import { HeroSliderController } from "./HeroSliderController";
  * and the only priority image. The client controller only toggles which slide is active.
  */
 export function HeroSlider() {
+  // Preload the first slide's AVIF (the LCP image) so it starts downloading with the HTML,
+  // ahead of the framework JS. Art direction is preserved via media + imageSizes.
+  const first = heroSlides[0];
+  const slot = getSlot(first.image.slot);
+  const desktop = getVariant(slot, first.image.variant).v;
+  const mobile = slot.variants[first.image.mobileVariant];
+  ReactDOM.preload(largest(desktop.avif), {
+    as: "image",
+    type: "image/avif",
+    imageSrcSet: srcsetOf(desktop.avif),
+    imageSizes: "100vw",
+    media: "(min-width: 768px)",
+    fetchPriority: "high",
+  });
+  if (mobile?.avif?.length) {
+    ReactDOM.preload(largest(mobile.avif), {
+      as: "image",
+      type: "image/avif",
+      imageSrcSet: srcsetOf(mobile.avif),
+      imageSizes: "100vw",
+      media: "(max-width: 767px)",
+      fetchPriority: "high",
+    });
+  }
+
   return (
     <section className="hero-slider theme-dark" aria-roledescription="carousel" aria-label="PakTalc highlights">
       <HeroSliderController labels={heroSlides.map((s) => s.label)}>

@@ -149,17 +149,17 @@ export function HeroSliderController({ labels, children }: { labels: string[]; c
             <button type="button" className="hero-slider__btn" aria-label="Previous slide" onClick={() => go(index - 1)}>
               <Icon name="prev" size={20} />
             </button>
-            {(
-              <button
-                type="button"
-                className="hero-slider__btn"
-                aria-label={userPaused ? "Play slideshow" : "Pause slideshow"}
-                aria-pressed={userPaused}
-                onClick={() => setUserPaused((p) => !p)}
-              >
-                <Icon name={userPaused ? "play" : "pause"} size={18} />
-              </button>
-            )}
+            {/* Autoplay runs by default. The pause control is visually hidden but reachable by keyboard and
+                screen readers, which keeps auto-moving content compliant (WCAG 2.2.2) without extra UI. */}
+            <button
+              type="button"
+              className="hero-slider__btn hero-slider__btn--quiet"
+              aria-label={userPaused ? "Play slideshow" : "Pause slideshow"}
+              aria-pressed={userPaused}
+              onClick={() => setUserPaused((p) => !p)}
+            >
+              <Icon name={userPaused ? "play" : "pause"} size={18} />
+            </button>
             <button type="button" className="hero-slider__btn" aria-label="Next slide" onClick={() => go(index + 1)}>
               <Icon name="next" size={20} />
             </button>

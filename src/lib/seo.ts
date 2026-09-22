@@ -28,7 +28,14 @@ export function pageMetadata(path: string, override: Override = {}): Metadata {
     title: path === "/" ? { absolute: title } : title,
     description,
     alternates: { canonical: path },
-    robots: entry?.noindex ? { index: false, follow: true } : { index: true, follow: true },
+    robots: entry?.noindex
+      ? { index: false, follow: true }
+      : {
+          index: true,
+          follow: true,
+          // Large image previews in Google Images / Discover matter for a photo-led industrial site.
+          googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+        },
     openGraph: {
       type: override.type ?? "website",
       url: path,

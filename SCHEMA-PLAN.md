@@ -13,5 +13,6 @@ Builders live in `src/lib/schema.ts`. Each page emits a single `@graph` via `<Js
 | `Article` | Insights | headline, description, image, datePublished, dateModified, author (Organization "PakTalc Technical Team" → PakTalc), publisher | Author becomes `Person` once a named reviewer is confirmed |
 | `ImageObject` | Lab reports on `/quality-control/` | contentUrl, caption, creator SKZ Laboratory Peshawar | |
 | `Place` | `/facilities/` | name, address (locality/region/country), containedInPlace | No geo coordinates (not verified) |
+| `FAQPage` | `/talc/`, `/talc/lumps/`, `/talc/powder/` | Question + acceptedAnswer | Only for questions whose answers are **visible on the page** and restate verified facts (content/faq.ts) |
 
-Excluded on purpose: AggregateRating, Review, Offer, FAQPage (no real FAQ set), certification/award properties.
+Excluded on purpose: AggregateRating, Review, Offer, certification/award properties.

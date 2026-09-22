@@ -22,6 +22,7 @@ export type CardProps = {
 /**
  * The single card used across the site. Equal heights come from the grid (items stretch) + a flex column body
  * whose CTA is pushed to the bottom. The whole card is clickable through a stretched title link (one tab stop).
+ * The category chip sits on the image; the CTA is a label + circular arrow that animates on hover.
  */
 export function Card({
   title,
@@ -43,12 +44,13 @@ export function Card({
       {slot ? (
         <div className="card__media" style={{ "--card-ratio": ratio } as React.CSSProperties}>
           <Picture slot={slot} variant={variant} sizes={sizes} noUpscale={false} alt={alt} />
+          {eyebrow ? <span className="card__chip">{eyebrow}</span> : null}
         </div>
       ) : null}
       <div className="card__body">
-        {eyebrow || meta ? (
+        {(!slot && eyebrow) || meta ? (
           <p className="card__eyebrow">
-            {eyebrow ? <span>{eyebrow}</span> : null}
+            {!slot && eyebrow ? <span>{eyebrow}</span> : null}
             {meta ? <span className="card__meta">{meta}</span> : null}
           </p>
         ) : null}
@@ -64,7 +66,10 @@ export function Card({
         <p className="card__desc">{description}</p>
         {href ? (
           <span className="card__more" aria-hidden="true">
-            {cta} <Icon name="arrow" size={18} />
+            <span className="card__more-label">{cta}</span>
+            <span className="card__more-arrow">
+              <Icon name="arrow" size={18} />
+            </span>
           </span>
         ) : null}
       </div>

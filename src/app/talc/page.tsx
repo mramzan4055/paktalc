@@ -2,12 +2,14 @@ import Link from "next/link";
 import { colourGrades, labReports, origins, talcDefinition, talcProperties, talcTerms } from "@content/talc";
 import { applications } from "@content/applications";
 import { seo } from "@content/seo";
+import { faqs } from "@content/faq";
 import { Figure } from "@/components/Picture";
 import { JsonLd, SectionHead, TextLink } from "@/components/ui";
 import { CtaBand, PageHero, RelatedLinks } from "@/components/sections";
+import { Faq } from "@/components/Faq";
 import { Card, CardGrid } from "@/components/Card";
 import { pageMetadata } from "@/lib/seo";
-import { breadcrumb, graph, webPage } from "@/lib/schema";
+import { breadcrumb, faqPage, graph, webPage } from "@/lib/schema";
 import { rfqHref } from "@content/navigation";
 import { Button } from "@/components/ui";
 
@@ -22,7 +24,13 @@ export default function TalcPage() {
   const s = seo["/talc/"];
   return (
     <>
-      <JsonLd data={graph(webPage({ path: "/talc/", name: s.title, description: s.description, imageSlot: "talc-hero", hasBreadcrumb: true }), breadcrumb("/talc/", crumbs))} />
+      <JsonLd
+        data={graph(
+          webPage({ path: "/talc/", name: s.title, description: s.description, imageSlot: "talc-hero", hasBreadcrumb: true }),
+          breadcrumb("/talc/", crumbs),
+          faqPage("/talc/", faqs["/talc/"]),
+        )}
+      />
       <PageHero
         slot="talc-hero"
         crumbs={crumbs}
@@ -206,6 +214,15 @@ export default function TalcPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="section theme-alt" aria-labelledby="faq-title" id="faq">
+        <div className="container container--wide split split--top">
+          <SectionHead eyebrow="Questions" title="Talc questions buyers ask" id="faq-title">
+            <p>Short answers to what buyers ask most. Anything else, just ask.</p>
+          </SectionHead>
+          <Faq items={faqs["/talc/"]} />
+        </div>
+      </section>
       <section className="section section--flush-top">
         <div className="container container--wide">
           <RelatedLinks

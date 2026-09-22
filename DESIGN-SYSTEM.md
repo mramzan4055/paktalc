@@ -43,7 +43,7 @@ Dark sections set `.theme-dark`, which remaps the aliases.
 - Grid: 4 columns (< 768), 8 (768–1023), 12 (≥ 1024). Implemented with CSS grid utilities `.grid-2/3/4` + asymmetric `.split` (7/5).
 
 ## Shape & depth
-- Radius: `--r-sm 2px` (inputs, tags), `--r-md 4px` (cards, images), `--r-pill 999px` (chips only).
+- Radius: `--r-sm 4px` (inputs, buttons, chips), `--r-md 8px` (cards, media), `--r-lg 14px`, `--r-pill 999px` (filter chips).
 - Shadow: `--sh-1` hairline lift for cards on hover only; `--sh-2` for the mobile drawer. Borders do most of the separating.
 
 ## Buttons
@@ -53,6 +53,9 @@ Dark sections set `.theme-dark`, which remaps the aliases.
 | Secondary | transparent, 1.5 px ink border (white on dark) |
 | Text link | olive-700 with underline offset 0.2em, thickness grows on hover |
 States: hover darkens by one step, `:focus-visible` shows a 3 px olive-500 outline with 2 px offset, disabled uses stone-400.
+
+**Card**: one component (`Card`/`CardGrid`). Fixed media ratio per family (product 4:3, editorial 3:2, article 16:9), category chip on the image, flex-column body, CTA row separated by a hairline with a circular arrow that fills olive on hover, 3 px lift + 1.04 image scale. Two-column grids lay cards out horizontally from 1024 px.
+
 
 ## Icons
 Inline SVG, 1.5 px stroke, 24 px grid, `currentColor`. No icon font.

@@ -72,11 +72,13 @@
   --header-h: 4rem;
 
   /* Shape */
-  --r-sm: 2px;
-  --r-md: 4px;
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 14px;
   --r-pill: 999px;
-  --sh-1: 0 1px 2px rgb(26 28 22 / 0.06), 0 8px 24px -12px rgb(26 28 22 / 0.18);
+  --sh-1: 0 1px 2px rgb(26 28 22 / 0.05), 0 12px 28px -14px rgb(26 28 22 / 0.22);
   --sh-2: 0 24px 64px -16px rgb(26 28 22 / 0.35);
+  --sh-card: 0 18px 40px -22px rgb(26 28 22 / 0.4);
 
   /* Motion */
   --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);

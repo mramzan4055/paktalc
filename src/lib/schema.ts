@@ -9,6 +9,9 @@ export const WEBSITE_ID = `${site.url}/#website`;
 
 type Json = Record<string, unknown>;
 
+/** Build date — used as dateModified so pages carry a freshness signal. */
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+
 export function organization(): Json {
   return {
     "@type": "Organization",
@@ -85,6 +88,7 @@ export function webPage(opts: {
     isPartOf: { "@id": WEBSITE_ID },
     about: { "@id": ORG_ID },
     inLanguage: "en",
+    dateModified: BUILD_DATE,
     ...(opts.imageSlot ? { primaryImageOfPage: { "@type": "ImageObject", url: slotImageUrl(opts.imageSlot) } } : {}),
     ...(opts.hasBreadcrumb ? { breadcrumb: { "@id": `${url}#breadcrumb` } } : {}),
   };
@@ -119,6 +123,19 @@ export function article(opts: { path: string; headline: string; description: str
     publisher: { "@id": ORG_ID },
     mainEntityOfPage: { "@id": `${url}#webpage` },
     inLanguage: "en",
+  };
+}
+
+/** FAQPage from visible Q&A content (answers are published on the page). */
+export function faqPage(path: string, items: { q: string; a: string }[]): Json {
+  return {
+    "@type": "FAQPage",
+    "@id": `${absolute(path)}#faq`,
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 }
 

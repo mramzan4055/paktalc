@@ -12,6 +12,8 @@ SKZMiningCompany.com owns the multi-mineral topics. Both sites currently publish
 - `robots.txt`: allow all, including `OAI-SearchBot`, `PerplexityBot`, `Googlebot`, `Bingbot`. **GPTBot / Google-Extended / CCBot** (training crawlers) are also allowed by default, controlled by one flag in `content/seo.ts` (`allowAITraining`) because that is a business decision.
 - Breadcrumbs (visible and `BreadcrumbList`) on every page below home.
 - Real 404 status, one-to-one 301s for every legacy URL, and 301s for old WordPress image URLs.
+- `max-image-preview: large` + `max-snippet: -1` for Google (photo-led site), image entries in `sitemap.xml`, and a preloaded hero AVIF for LCP.
+- Buyer FAQs (visible + FAQPage) on the talc hub and both product pages: answer-first text that search and AI answer engines can quote.
 
 ## On-page rules
 - Exactly one H1, sequential H2/H3.

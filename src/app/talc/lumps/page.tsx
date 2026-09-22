@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { colourGrades, packing, yieldRatios } from "@content/talc";
 import { seo } from "@content/seo";
+import { faqs } from "@content/faq";
 import { Figure, Picture, SideFigure } from "@/components/Picture";
 import { Button, JsonLd, SectionHead, TextLink } from "@/components/ui";
 import { CtaBand, RelatedLinks, SplitHero } from "@/components/sections";
+import { Faq } from "@/components/Faq";
 import { pageMetadata } from "@/lib/seo";
-import { breadcrumb, graph, product, webPage } from "@/lib/schema";
+import { breadcrumb, faqPage, graph, product, webPage } from "@/lib/schema";
 
 export const metadata = pageMetadata("/talc/lumps/");
 
@@ -24,6 +26,7 @@ export default function TalcLumpsPage() {
         data={graph(
           webPage({ path, name: s.title, description: s.description, imageSlot: "talc-lumps-main", hasBreadcrumb: true }),
           breadcrumb(path, crumbs),
+          faqPage(path, faqs["/talc/lumps/"]),
           product({
             path,
             name: "Talc lumps",
@@ -232,6 +235,15 @@ export default function TalcLumpsPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="section theme-alt" aria-labelledby="faq-title" id="faq">
+        <div className="container container--wide split split--top">
+          <SectionHead eyebrow="Questions" title="Talc lumps: common questions" id="faq-title">
+            <p>Short answers to what buyers ask most. Anything else, just ask.</p>
+          </SectionHead>
+          <Faq items={faqs["/talc/lumps/"]} />
+        </div>
+      </section>
       <CtaBand title="Ask about talc lumps" primary={{ label: "Ask about talc lumps", href: "/contacts/?form=lumps#rfq" }} />
     </>
   );
