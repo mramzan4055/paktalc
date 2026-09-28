@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { applications, applicationsIntro, regulatedNote } from "@content/applications";
 import { seo } from "@content/seo";
+import { faqs } from "@content/faq";
 import { JsonLd, SectionHead } from "@/components/ui";
 import { CtaBand, RelatedLinks, SplitHero } from "@/components/sections";
 import { Button } from "@/components/ui";
+import { Faq } from "@/components/Faq";
 import { pageMetadata } from "@/lib/seo";
-import { breadcrumb, graph, webPage } from "@/lib/schema";
+import { breadcrumb, faqPage, graph, webPage } from "@/lib/schema";
 
 export const metadata = pageMetadata("/applications/");
 
@@ -17,9 +19,10 @@ const crumbs = [
 
 export default function ApplicationsPage() {
   const s = seo[path];
+  const appFaqs = faqs["/applications/"] ?? [];
   return (
     <>
-      <JsonLd data={graph(webPage({ path, name: s.title, description: s.description, imageSlot: "talc-lumps-alt-1", hasBreadcrumb: true }), breadcrumb(path, crumbs))} />
+      <JsonLd data={graph(webPage({ path, name: s.title, description: s.description, imageSlot: "talc-lumps-alt-1", hasBreadcrumb: true }), breadcrumb(path, crumbs), ...(appFaqs.length ? [faqPage(path, appFaqs)] : []))} />
       <SplitHero
         crumbs={crumbs}
         eyebrow="Applications"
@@ -106,6 +109,17 @@ export default function ApplicationsPage() {
           />
         </div>
       </section>
+
+      {appFaqs.length ? (
+        <section className="section" aria-labelledby="app-faq-title" id="faq">
+          <div className="container container--wide split split--top">
+            <SectionHead eyebrow="Questions" title="Application questions buyers ask" id="app-faq-title">
+              <p>Short answers on how talc works in each industry. More detail in your specification enquiry.</p>
+            </SectionHead>
+            <Faq items={appFaqs} />
+          </div>
+        </section>
+      ) : null}
 
       <CtaBand title="Tell us about your application" body="Describe your product and process, plus your current talc specification if you have one. We will suggest a grade, fineness and packing." />
     </>

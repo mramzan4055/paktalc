@@ -2,12 +2,14 @@ import Link from "next/link";
 import { labDisclaimer, labReports } from "@content/talc";
 import { qualityIntro, qualityStages, testParameters } from "@content/quality";
 import { seo } from "@content/seo";
+import { faqs } from "@content/faq";
 import { Figure, Picture, SideFigure } from "@/components/Picture";
 import { Button, JsonLd, SectionHead } from "@/components/ui";
 import { CtaBand, RelatedLinks, SplitHero } from "@/components/sections";
+import { Faq } from "@/components/Faq";
 import { pageMetadata } from "@/lib/seo";
 import { absolute } from "@/lib/seo";
-import { breadcrumb, graph, slotImageUrl, webPage } from "@/lib/schema";
+import { breadcrumb, faqPage, graph, slotImageUrl, webPage } from "@/lib/schema";
 import { getSlot } from "@/lib/images";
 
 export const metadata = pageMetadata("/quality-control/");
@@ -20,6 +22,7 @@ const crumbs = [
 
 export default function QualityPage() {
   const s = seo[path];
+  const qcFaqs = faqs["/quality-control/"] ?? [];
   const reportImages = labReports.map((r) => ({
     "@type": "ImageObject",
     contentUrl: slotImageUrl(r.imageSlot),
@@ -29,7 +32,7 @@ export default function QualityPage() {
   }));
   return (
     <>
-      <JsonLd data={graph(webPage({ path, name: s.title, description: s.description, imageSlot: "lab-1", hasBreadcrumb: true }), breadcrumb(path, crumbs), ...reportImages)} />
+      <JsonLd data={graph(webPage({ path, name: s.title, description: s.description, imageSlot: "lab-1", hasBreadcrumb: true }), breadcrumb(path, crumbs), ...reportImages, ...(qcFaqs.length ? [faqPage(path, qcFaqs)] : []))} />
       <SplitHero
         crumbs={crumbs}
         eyebrow="Quality"
@@ -195,6 +198,17 @@ export default function QualityPage() {
           />
         </div>
       </section>
+
+      {qcFaqs.length ? (
+        <section className="section theme-alt" aria-labelledby="qc-faq-title" id="faq">
+          <div className="container container--wide split split--top">
+            <SectionHead eyebrow="Questions" title="Quality questions buyers ask" id="qc-faq-title">
+              <p>What PakTalc measures, and what the published results mean.</p>
+            </SectionHead>
+            <Faq items={qcFaqs} />
+          </div>
+        </section>
+      ) : null}
 
       <CtaBand title="Need a lot-specific analysis?" body="Ask for a sample and analysis with your quotation. Tell us which parameters and limits matter for your application." />
     </>

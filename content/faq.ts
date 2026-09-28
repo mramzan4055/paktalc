@@ -73,4 +73,52 @@ export const faqs: Record<string, Faq[]> = {
       a: "Send your current data sheet or specification. We will compare it with what the plants produce and tell you honestly whether it can be matched, and on which parameters.",
     },
   ],
+  "/applications/": [
+    {
+      q: "What industries use talc?",
+      a: "Talc is used in seven main industries: plastics and polymers (stiffness, heat resistance), paints and coatings (matting, barrier, film build), paper and pulp (pitch control, filler), ceramics (flux, thermal shock resistance), rubber (processing aid, anti-tack), cosmetics and personal care (slip, oil absorption), and pharmaceuticals (glidant, lubricant). Each industry specifies different grades.",
+    },
+    {
+      q: "What talc grade is needed for plastics?",
+      a: "Plastic compounders typically use fine mesh or micronized talc powder, specified by D50 and top-cut particle size. Whiteness matters for light-coloured compounds. Bulk density and moisture affect dosing. Talc's platy particles increase stiffness (flexural modulus) and heat-deflection temperature and act as a nucleating agent in polypropylene.",
+    },
+    {
+      q: "Is talc used in paints and coatings?",
+      a: "Yes. In paint, talc is an extender that improves film build, sanding and matting, and its lamellar particles form a barrier that improves weather and water resistance. Buyers evaluate whiteness, oil absorption and sieve residue (grit). Typical fineness is 325 mesh and finer.",
+    },
+    {
+      q: "What does talc do in paper making?",
+      a: "Paper mills use talc primarily for pitch control: talc's organophilic surface adsorbs sticky wood resins (pitch and stickies) before they deposit on the machine. As a filler or coating pigment it improves opacity, smoothness and printability. Buyers check whiteness, particle size and lot-to-lot consistency.",
+    },
+    {
+      q: "Can talc be used in ceramics?",
+      a: "Yes. Talc is a magnesium source and flux in ceramic bodies and glazes, used in wall tiles, sanitaryware and cordierite ceramics. It improves thermal-shock resistance, controls thermal expansion, lowers firing temperature and improves plasticity. Ceramic buyers evaluate MgO and SiO₂ content, iron content (for fired colour) and loss on ignition.",
+    },
+    {
+      q: "Is PakTalc's talc suitable for cosmetics?",
+      a: "PakTalc does not claim pharmacopoeial or cosmetic-regulatory compliance on this website. Cosmetic talc must meet the regulations of the destination market, including mineralogical purity testing. Buyers in this sector should request samples and qualify the material using their own accredited laboratories. PakTalc will share the lot documentation it holds.",
+    },
+  ],
+  "/quality-control/": [
+    {
+      q: "How is PakTalc's talc tested?",
+      a: "SKZ Laboratory Peshawar tests powder samples for particle size by laser analysis (Bettersizer ST), whiteness by colour reader (Konica), sieve residue, bulk density, loss on ignition at 1000 °C, silica (SiO₂) and magnesia (MgO). The full method and two published sample results are on the quality-control page.",
+    },
+    {
+      q: "What is the whiteness of PakTalc's talc powder?",
+      a: "Two SKZ Laboratory Peshawar sample reports are published. The above-325-mesh sample (Agam 02) shows whiteness above 93; the above-400-mesh sample (DD) shows whiteness above 94. These are individual sample results, not a guaranteed specification for every lot. Ask for a lot analysis with your quotation.",
+    },
+    {
+      q: "What is loss on ignition (LOI) in talc?",
+      a: "Loss on ignition is the weight lost when a sample is heated to 1000 °C. It indicates carbonate and other associated minerals. A lower LOI is closer to pure talc. The published Agam 02 report shows LOI under 8 % and the DD report shows LOI under 6 %.",
+    },
+    {
+      q: "Can I request a Certificate of Analysis (COA) or lot-specific analysis?",
+      a: "Yes. Ask for a lot analysis with your quotation by mentioning it in your enquiry. The published sample reports on the quality control page show the kind of analysis SKZ Laboratory Peshawar provides; they are not a guaranteed specification for every lot.",
+    },
+    {
+      q: "Does PakTalc hold ISO certification?",
+      a: "No ISO certification is claimed on this website. Buyers requiring specific quality management certification should ask directly so that the current documentation can be shared.",
+    },
+  ],
 };

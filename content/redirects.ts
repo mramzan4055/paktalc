@@ -41,5 +41,4 @@ export const redirects: Redirect[] = [
   { from: "/careers/", to: "/contacts/", prefix: true },
 
   // Convenience
-  { from: "/contact/", to: "/contacts/" },
 ];

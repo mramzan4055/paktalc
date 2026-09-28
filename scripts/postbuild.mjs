@@ -148,12 +148,22 @@ const llms = `# ${site.name}
 
 > ${company.shortDescription}
 
-PakTalc is ${company.relationship} (${company.parent.url}). PakTalc covers talc only; SKZ Mining Company presents its other minerals on its own website.
+PakTalc is ${company.relationship} (${company.parent.url}). PakTalc covers talc only; SKZ Mining Company presents its other minerals on its own website. The company is led by directors ${company.directors.join(" and ")}.
+
+## What is talc?
+Talc is a hydrated magnesium silicate mineral, Mg₃Si₄O₁₀(OH)₂, with Mohs hardness 1 (the softest mineral). It has a lamellar (platy) structure, is hydrophobic and chemically inert, and is used as a functional mineral in plastics, paints and coatings, paper, ceramics, rubber, cosmetics and pharmaceuticals.
 
 ## Products
-- [Talc lumps](${u("/talc/lumps/")}): hand-sorted raw talc (soapstone), graded by colour (${colourGrades.map((g) => g.name.toLowerCase()).join(", ")}) and size, supplied un-ground in jumbo bags.
+- [Talc lumps](${u("/talc/lumps/")}): hand-sorted raw talc (soapstone), graded by colour (${colourGrades.map((g) => g.name.toLowerCase()).join(", ")}) and size, supplied un-ground in jumbo bags. For buyers who grind in-house.
 - [Talc powder](${u("/talc/powder/")}): talc ground on hammer and Raymond mill lines in Peshawar and classified to the buyer's fineness (company records rate the meshing plants for ${meshCapability.plantRange}; published sample reports: ${meshCapability.reportedSamples.join(", ")}). Packed in ${packing.formats.slice(0, 2).map((f) => f.name.toLowerCase()).join(" or ")}.
-- [Talc overview](${u("/talc/")}): properties, terminology, colour grades and origins (${origins.afghan.label}: ${origins.afghan.sources.join(", ")}; ${origins.pakistani.label}: ${origins.pakistani.sources.join(", ")}).
+- [Talc overview](${u("/talc/")}): properties, terminology, colour grades and origins.
+
+## Colour grades
+${colourGrades.map((g) => `- ${g.name}: ${g.description}`).join("\n")}
+
+## Origins
+- ${origins.afghan.label}: ${origins.afghan.sources.join(", ")} (processed through Jalalabad before Peshawar).
+- ${origins.pakistani.label}: ${origins.pakistani.sources.join(", ")} (direct to Peshawar).
 
 ## Operations
 ${sites.map((s) => `- ${s.name}, ${s.place}: ${s.role}`).join("\n")}
@@ -162,7 +172,12 @@ ${sites.map((s) => `- ${s.name}, ${s.place}: ${s.role}`).join("\n")}
 - [Facilities](${u("/facilities/")})
 
 ## Quality
-- [Quality control](${u("/quality-control/")}): checks at the mine, in the Peshawar yard and at SKZ Laboratory Peshawar (particle size by Bettersizer ST, whiteness by Konica colour reader, sieve residue, bulk density, LOI, SiO₂, MgO). ${labReports.length} sample reports are published; they are individual sample results, not guaranteed specifications. No certifications are claimed on this site.
+- [Quality control](${u("/quality-control/")}): checks at the mine, in the Peshawar yard and at SKZ Laboratory Peshawar (particle size by Bettersizer ST, whiteness by Konica colour reader, sieve residue, bulk density, LOI, SiO\u2082, MgO). ${labReports.length} sample reports are published.
+- Published whiteness: above 93 (above-325-mesh sample, Agam 02), above 94 (above-400-mesh sample, DD).
+- Published LOI: under 8 % (Agam 02), under 6 % (DD).
+- Published SiO\u2082: 60\u201364 % (Agam 02), above 60 % (DD).
+- Published MgO: 30\u201333 % (Agam 02), above 30 % (DD).
+- These are individual sample results, not guaranteed specifications. No certifications are claimed on this site.
 
 ## Applications
 ${applications.map((a) => `- [${a.name}](${u(`/applications/#${a.id}`)}): ${a.why}`).join("\n")}
@@ -170,7 +185,7 @@ ${applications.map((a) => `- [${a.name}](${u(`/applications/#${a.id}`)}): ${a.wh
 ## Company
 - [About](${u("/about/")})
 - [SKZ Mining affiliation](${u("/affiliation/")}): company structure and supply chain.
-- [Sustainability](${u("/sustainability/")})
+- [Sustainability](${u("/sustainability/")}): selective mining, dust collection, fruit-tree plantation, Japanese farming techniques, geology training, local employment.
 
 ## Insights
 ${articles.map((a) => `- [${a.title}](${u(`/insights/${a.slug}/`)}): ${a.description}`).join("\n")}
@@ -180,6 +195,7 @@ ${articles.map((a) => `- [${a.title}](${u(`/insights/${a.slug}/`)}): ${a.descrip
 - Email: ${company.email}
 - Phone: ${company.phone.display}
 - Head office: ${company.headOffice.locality}, ${company.headOffice.country}
+- Export packing warehouse: Moach Goth, Karachi, Pakistan
 `;
 writeFileSync(join(OUT, "llms.txt"), llms);
 

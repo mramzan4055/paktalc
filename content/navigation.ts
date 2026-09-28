@@ -37,7 +37,8 @@ export const mainNav: NavItem[] = [
   },
   { label: "Gallery", href: "/gallery/" },
   { label: "Insights", href: "/insights/" },
-  { label: "Contact", href: "/contacts/" },
+  { label: "Contact", href: "/contact/" },
+  { label: "Quote", href: "/contacts/" },
 ];
 
 export const footerNav: { title: string; links: NavLink[] }[] = [
@@ -68,7 +69,8 @@ export const footerNav: { title: string; links: NavLink[] }[] = [
       { label: "SKZ Mining affiliation", href: "/affiliation/" },
       { label: "Gallery", href: "/gallery/" },
       { label: "Insights", href: "/insights/" },
-      { label: "Contact", href: "/contacts/" },
+      { label: "Contact", href: "/contact/" },
+      { label: "Request a quote", href: "/contacts/" },
     ],
   },
 ];

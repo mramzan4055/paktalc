@@ -11,10 +11,18 @@ const BUILD_DATE = new Date().toISOString().slice(0, 10);
 
 const priority: Record<string, number> = {
   "/": 1,
-  "/talc/": 0.9,
-  "/talc/lumps/": 0.9,
-  "/talc/powder/": 0.9,
-  "/contacts/": 0.8,
+  "/talc/": 0.95,
+  "/talc/lumps/": 0.95,
+  "/talc/powder/": 0.95,
+  "/contacts/": 0.9,
+  "/applications/": 0.85,
+  "/quality-control/": 0.85,
+  "/processing/": 0.8,
+  "/mining-operations/": 0.8,
+  "/about/": 0.75,
+  "/affiliation/": 0.7,
+  "/facilities/": 0.7,
+  "/sustainability/": 0.65,
 };
 
 /** images.json page key for each route, so the sitemap can carry image entries (image SEO). */
@@ -26,9 +34,12 @@ const imagePage: Record<string, string> = {
   "/mining-operations/": "mining-operations",
   "/processing/": "mining-operations",
   "/quality-control/": "quality",
+  "/applications/": "talc",
   "/about/": "about",
   "/affiliation/": "affiliation",
   "/gallery/": "gallery",
+  "/facilities/": "affiliation",
+  "/sustainability/": "about",
 };
 
 function imagesFor(path: string): string[] {

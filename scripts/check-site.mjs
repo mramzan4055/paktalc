@@ -134,7 +134,7 @@ if (/Disallow: \/\s*$/m.test(robots.split(/User-Agent: \*/i)[1]?.split(/User-Age
 if (!existsSync(join(OUT, "404.html"))) err("404", "out/404.html missing");
 if (!existsSync(join(OUT, ".htaccess"))) err(".htaccess", "missing (run postbuild)");
 if (!existsSync(join(OUT, "llms.txt"))) err("llms.txt", "missing");
-for (const f of ["api/rfq.php", "api/rfq-token.php", "api/_lib/bootstrap.php", "api/_lib/.htaccess"]) if (!existsSync(join(OUT, f))) err("php", `${f} missing from out/`);
+for (const f of ["api/rfq.php", "api/rfq-token.php", "api/contact.php", "api/_lib/bootstrap.php", "api/_lib/.htaccess"]) if (!existsSync(join(OUT, f))) err("php", `${f} missing from out/`);
 
 console.log(`Checked ${htmlFiles.length} HTML files, ${smUrls.length} sitemap URLs.`);
 if (warnings.length) console.log(`\n${warnings.length} warning(s):\n  ` + warnings.join("\n  "));

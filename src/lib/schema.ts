@@ -43,7 +43,32 @@ export function organization(): Json {
       url: absolute("/contacts/"),
     },
     parentOrganization: { "@id": SKZ_ID },
-    knowsAbout: ["Talc", "Soapstone", "Talc lumps", "Talc powder", "Talc mining", "Talc processing"],
+    areaServed: "Worldwide",
+    knowsAbout: [
+      "Talc",
+      "Soapstone",
+      "Talc lumps",
+      "Talc powder",
+      "Talc mining",
+      "Talc processing",
+      "Micronized talc",
+      "Talc for plastics",
+      "Talc for paints and coatings",
+      "Talc for paper",
+      "Talc for ceramics",
+      "Talc for rubber",
+      "Cosmetic grade talc",
+      "Industrial grade talc",
+      "Mineral processing Pakistan",
+      "Talc export Pakistan",
+      "Magnesium silicate",
+      "Raymond mill grinding",
+      "Hammer mill grinding",
+      "Talc mesh size",
+      "Particle size analysis",
+      "Talc colour grades",
+    ],
+    subjectOf: { "@id": WEBSITE_ID },
   };
 }
 
@@ -52,7 +77,22 @@ export function skzOrganization(): Json {
 }
 
 export function website(): Json {
-  return { "@type": "WebSite", "@id": WEBSITE_ID, url: `${site.url}/`, name: site.name, publisher: { "@id": ORG_ID }, inLanguage: "en" };
+  return {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    url: `${site.url}/`,
+    name: site.name,
+    publisher: { "@id": ORG_ID },
+    inLanguage: "en",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${site.url}/insights/?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
 }
 
 export type Crumb = { name: string; path: string };
