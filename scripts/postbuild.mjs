@@ -11,6 +11,7 @@ import { articles } from "../content/insights.ts";
 import { applications } from "../content/applications.ts";
 import { colourGrades, origins, labReports, meshCapability, packing } from "../content/talc.ts";
 import { seo } from "../content/seo.ts";
+import { faqs } from "../content/faq.ts";
 
 const OUT = "out";
 if (!existsSync(OUT)) throw new Error("out/ not found — run next build first");
@@ -63,13 +64,21 @@ L();
 L("<IfModule mod_rewrite.c>");
 L("RewriteEngine On");
 L("RewriteBase /");
+L("# Mail config must never be downloadable if the one-zip upload places php-private inside the site.");
+L("RewriteRule ^php-private(/|$) - [F,L]");
 L();
 // Every redirect target is absolute (https + canonical host), and legacy rules run BEFORE host canonicalisation,
 // so any old URL (http://, www., missing slash…) reaches its final page in exactly one hop.
 const abs = (p) => `https://${host}${p}`;
 L("# --- 1. Legacy WordPress pages (one-to-one, see REDIRECT-PLAN.md) ---");
-for (const r of exact) L(`RewriteRule ^${esc(strip(r.from)).replace(/\/$/, "")}/?$ ${abs(r.to)} [R=301,L]`);
-for (const r of prefix) L(`RewriteRule ^${esc(strip(r.from))}.*$ ${abs(r.to)} [R=301,L]`);
+// QSD drops ?p=, ?utm_ and other leftover WordPress query strings on the legacy hop.
+// The target is already https://paktalc.com/..., so http and www are corrected in the same 301.
+for (const r of exact) L(`RewriteRule ^${esc(strip(r.from)).replace(/\/$/, "")}/?$ ${abs(r.to)} [R=301,L,QSD]`);
+for (const r of prefix) {
+  const body = esc(strip(r.from).replace(/\/$/, ""));
+  // `projects` and `projects/anything`, but not `projects-extra`.
+  L(`RewriteRule ^${body}(/.*)?$ ${abs(r.to)} [R=301,L,QSD]`);
+}
 L("# WordPress query-string URLs (?p=, ?page_id=, ?s=) → home");
 L("RewriteCond %{QUERY_STRING} (^|&)(p|page_id|s|cat|tag|author)=[^&]* [NC]");
 L(`RewriteRule ^$ ${abs("/")}? [R=301,L]`);
@@ -189,6 +198,11 @@ ${applications.map((a) => `- [${a.name}](${u(`/applications/#${a.id}`)}): ${a.wh
 
 ## Insights
 ${articles.map((a) => `- [${a.title}](${u(`/insights/${a.slug}/`)}): ${a.description}`).join("\n")}
+
+## Direct answers
+${Object.entries(faqs)
+  .flatMap(([path, items]) => items.map((f) => `### ${f.q}\n${f.a}\nSource: ${u(path)}`))
+  .join("\n\n")}
 
 ## Contact
 - Request a quotation: ${u("/contacts/")}

@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="container container--wide">
         <div className="site-footer__top">
           <div className="site-footer__brand stack">
-            <Link prefetch={false} href="/" aria-label="PakTalc home" className="site-footer__logo">
+            <Link href="/" aria-label="PakTalc home" className="site-footer__logo">
               <img
                 src="/images/brand/paktalc-logo-horizontal-01-light-360w.webp"
                 srcSet="/images/brand/paktalc-logo-horizontal-01-light-240w.webp 240w, /images/brand/paktalc-logo-horizontal-01-light-360w.webp 360w, /images/brand/paktalc-logo-horizontal-01-light-480w.webp 480w"
@@ -26,7 +26,7 @@ export function SiteFooter() {
               PakTalc is {company.relationship} We supply hand-sorted talc lumps and ground talc powder, processed in Peshawar and packed in
               Karachi for export.
             </p>
-            <Link prefetch={false} href={rfqHref} className="btn btn--primary btn--sm">
+            <Link href={rfqHref} className="btn btn--primary btn--sm">
               <span>Request a quote</span>
               <Icon name="arrow" size={16} className="btn__icon" />
             </Link>
@@ -38,7 +38,7 @@ export function SiteFooter() {
               <ul>
                 {col.links.map((l) => (
                   <li key={l.href}>
-                    <Link prefetch={false} href={l.href}>{l.label}</Link>
+                    <Link href={l.href}>{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -79,7 +79,7 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <Link prefetch={false} href="/privacy/">Privacy</Link>
+              <Link href="/privacy/">Privacy</Link>
             </li>
             <li>
               <a href="/sitemap.xml">Sitemap</a>

@@ -230,7 +230,7 @@ export default function TalcLumpsPage() {
             ]}
           />
           <p className="small muted section-foot">
-            Grinding in-house? See the <Link prefetch={false} href="/applications/">applications page</Link> for what end users in each industry look for.
+            Grinding in-house? See the <Link href="/applications/">applications page</Link> for what end users in each industry look for.
           </p>
         </div>
       </section>

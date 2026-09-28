@@ -76,8 +76,15 @@ if (preg_match_all('#https?://#i', $in['message']) > 3 || preg_match('/<\s*(a|sc
     $errors['message'] = 'Please remove links or HTML from your message.';
 }
 
+$captchaError = pt_verify_captcha($config, $_POST['captcha_a'] ?? null, $_POST['captcha_b'] ?? null, $_POST['captcha_proof'] ?? null, $_POST['captcha_answer'] ?? null);
+if ($captchaError === 'wrong') {
+    $errors['captcha'] = 'That answer does not match. Please try the sum again.';
+} elseif ($captchaError !== null) {
+    $errors['captcha'] = 'The check expired. Please answer the new sum.';
+}
+
 if ($errors) {
-    pt_fail(422, 'Please correct the highlighted fields.', $errors);
+    pt_form_fail(422, 'Please correct the highlighted fields.', $errors, $config, $captchaError !== null && $captchaError !== 'wrong', '/contact/?sent=0#contact');
 }
 
 pt_consume_token($config, $token);
@@ -121,7 +128,7 @@ try {
     (new PtMailer($config))->send((string) $config['to'], $subjectLine, $text, $html, $in['email']);
 } catch (Throwable $e) {
     error_log('[paktalc-contact] send failed: ' . $e->getMessage());
-    pt_fail(502, 'We could not send your message just now. Please email ' . ($config['public_email'] ?? 'info@paktalc.com') . ' directly.');
+    pt_fail(502, 'We could not send your message just now. Please email ' . ($config['public_email'] ?? 'contact@paktalc.com') . ' directly.');
 }
 
 pt_respond(200, ['ok' => true, 'message' => 'Thank you — your message has been sent.'], '/contact/thank-you/');

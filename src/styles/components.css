@@ -266,12 +266,20 @@
   transform: translate(-50%, 0);
   transition-delay: 0s;
 }
-/* No-JS fallback: hover / focus-within still reveal submenus */
-html:not(.js) .nav__item:hover .nav__menu,
-html:not(.js) .nav__item:focus-within .nav__menu {
+/* Hover and keyboard focus reveal the dropdown even before hydration. */
+@media (hover: hover) and (pointer: fine) {
+  .nav__item:hover .nav__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition-delay: 0s;
+  }
+}
+.nav__item:focus-within .nav__menu {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
+  transition-delay: 0s;
 }
 .nav__menu ul {
   list-style: none;
@@ -1718,6 +1726,9 @@ html:not(.js) .nav__item:focus-within .nav__menu {
 .field textarea::placeholder {
   color: #8f8b7c;
 }
+.field--captcha input {
+  max-width: 8rem;
+}
 .field__hint {
   font-size: var(--fs-300);
   color: var(--text-muted);
@@ -1819,27 +1830,38 @@ html:not(.js) .nav__item:focus-within .nav__menu {
 }
 
 /* ================= Motion ================= */
+/* Fade only after the visitor has clicked to another page, not on the first load. */
 @media (prefers-reduced-motion: no-preference) {
-  .js [data-reveal] {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
+  html[data-nav] .page-swap {
+    animation: page-fade-in 160ms ease-out;
   }
-  .js [data-reveal].is-in {
+}
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal],
+    [data-stagger] > * {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 28%;
+    }
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
     opacity: 1;
     transform: none;
   }
-  .js [data-stagger] > * {
-    opacity: 0;
-    transform: translateY(18px);
-    transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out);
-    transition-delay: calc(var(--i, 0) * 70ms);
-  }
-  .js [data-stagger].is-in > * {
-    opacity: 1;
-    transform: none;
-  }
-  /* Hero: image settles, text rises (CSS only, runs on first paint — no JS dependency for LCP). */
+}
+@media (prefers-reduced-motion: no-preference) {
   .page-hero__img,
   .home-hero__img {
     animation: hero-settle var(--dur-4) var(--ease-out) both;

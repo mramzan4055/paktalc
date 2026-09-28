@@ -10,6 +10,42 @@ declare(strict_types=1);
 $root = realpath(__DIR__ . '/../out');
 $path = rawurldecode(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/');
 
+// Same legacy map as out/.htaccess: exact paths first, then longest folder prefix. One 301, query string dropped.
+$redirectFile = $root . '/redirects.json';
+if (is_file($redirectFile)) {
+    $map = json_decode((string) file_get_contents($redirectFile), true);
+    $pages = is_array($map['pages'] ?? null) ? $map['pages'] : [];
+    $exact = array_values(array_filter($pages, static fn ($r) => empty($r['prefix'])));
+    $prefix = array_values(array_filter($pages, static fn ($r) => !empty($r['prefix'])));
+    usort($prefix, static fn ($a, $b) => strlen($b['from']) <=> strlen($a['from']));
+    $norm = '/' . trim($path, '/');
+    $target = null;
+    foreach ($exact as $r) {
+        $from = rtrim((string) $r['from'], '/');
+        if ($norm === $from) {
+            $target = (string) $r['to'];
+            break;
+        }
+    }
+    if ($target === null) {
+        foreach ($prefix as $r) {
+            $from = rtrim((string) $r['from'], '/');
+            if ($norm === $from || str_starts_with($norm, $from . '/')) {
+                $target = (string) $r['to'];
+                break;
+            }
+        }
+    }
+    if ($target !== null) {
+        header('Location: https://paktalc.com' . $target, true, 301);
+        exit;
+    }
+}
+if (preg_match('#^/wp-(admin|login\\.php|json|includes)(/|$)#', $path) || $path === '/xmlrpc.php') {
+    http_response_code(410);
+    exit('Gone');
+}
+
 // PHP endpoints run normally.
 if (str_starts_with($path, '/api/') && str_ends_with($path, '.php')) {
     if (str_starts_with($path, '/api/_lib/')) {

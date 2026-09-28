@@ -11,6 +11,12 @@ export const site = {
   tagline: "Talc Extraction, Processing, Export & Import", // wording from the official logo
 } as const;
 
+/**
+ * Last day the public facts were edited. Sitemap and JSON-LD use this date.
+ * Do not replace it with the build clock — that would mark unchanged pages as freshly updated.
+ */
+export const contentUpdated = "2026-09-28";
+
 export const company = {
   brand: "PakTalc",
   legalParent: "SKZ Mining Company Pvt. Ltd.",
@@ -18,7 +24,7 @@ export const company = {
   relationship: "a division of SKZ Mining Company Pvt. Ltd.",
   shortDescription:
     "PakTalc is the talc division of SKZ Mining Company Pvt. Ltd. It supplies sorted talc lumps and ground talc powder, processed at SKZ facilities in Peshawar and packed for export in Karachi, Pakistan.",
-  email: "info@paktalc.com",
+  email: "contact@paktalc.com",
   /** VERIFY A2 — only the number shown on both websites is published. */
   phone: { display: "+92 312 5112324", href: "tel:+923125112324" },
   /** VERIFY A1 — Islamabad per SKZ site + affiliation page; no street address published. */

@@ -56,7 +56,7 @@ export function Card({
         ) : null}
         <H className="card__title">
           {href ? (
-            <Link prefetch={false} href={href} className="card__link">
+            <Link href={href} className="card__link">
               {title}
             </Link>
           ) : (

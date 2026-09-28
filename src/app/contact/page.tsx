@@ -1,4 +1,4 @@
-import { company, sites } from "@content/company";
+import { company } from "@content/company";
 import { seo } from "@content/seo";
 import { JsonLd } from "@/components/ui";
 import { PageHeader } from "@/components/sections";
@@ -26,7 +26,7 @@ export default function ContactPage() {
         title="Get in Touch"
         intro={
           <p>
-            Have a question about a specific mineral or specimen? Send us a message and our team will respond.
+            Have a question about talc grades, samples, processing or your existing order? Send us a message and our team will respond.
           </p>
         }
       />

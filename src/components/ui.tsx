@@ -26,7 +26,7 @@ export function Button({ href, children, variant = "primary", icon = "arrow", cl
     );
   }
   return (
-    <Link prefetch={false} href={href} className={cls}>
+    <Link href={href} className={cls}>
       {inner}
     </Link>
   );
@@ -34,7 +34,7 @@ export function Button({ href, children, variant = "primary", icon = "arrow", cl
 
 export function TextLink({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) {
   return (
-    <Link prefetch={false} href={href} className={["text-link", className].filter(Boolean).join(" ")}>
+    <Link href={href} className={["text-link", className].filter(Boolean).join(" ")}>
       <span>{children}</span>
       <Icon name="arrow" size={16} className="text-link__icon" />
     </Link>
@@ -79,7 +79,7 @@ export function Breadcrumbs({ items }: { items: { name: string; path: string }[]
       <ol>
         {items.map((c, i) => (
           <li key={c.path}>
-            {i < items.length - 1 ? <Link prefetch={false} href={c.path}>{c.name}</Link> : <span aria-current="page">{c.name}</span>}
+            {i < items.length - 1 ? <Link href={c.path}>{c.name}</Link> : <span aria-current="page">{c.name}</span>}
           </li>
         ))}
       </ol>

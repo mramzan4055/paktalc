@@ -25,7 +25,8 @@ export function pageMetadata(path: string, override: Override = {}): Metadata {
   }
 
   return {
-    title: path === "/" ? { absolute: title } : title,
+    // Titles in content/seo.ts are complete; do not append the root layout's template again.
+    title: { absolute: title },
     description,
     alternates: { canonical: path },
     robots: entry?.noindex

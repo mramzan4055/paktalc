@@ -7,6 +7,24 @@
 export type Faq = { q: string; a: string };
 
 export const faqs: Record<string, Faq[]> = {
+  "/": [
+    {
+      q: "What does PakTalc supply?",
+      a: "PakTalc supplies hand-sorted talc lumps and ground talc powder. It is the talc division of SKZ Mining Company Pvt. Ltd. Lumps are sorted by colour and size at the mine. Powder is ground at the Peshawar meshing plants and packed for export in Karachi.",
+    },
+    {
+      q: "Which talc colour grades can I order?",
+      a: "White, grey, green and coffee. The grade is set during hand sorting and carries through to the powder, so name the colour with your enquiry.",
+    },
+    {
+      q: "Where is PakTalc talc processed and packed?",
+      a: "Talc is stocked and ground at two meshing plants in Hayatabad Industrial Zone, Peshawar, with a processing yard on Ring Road, Peshawar. Final sorting, packing and container loading are done at the warehouse in Moach Goth, Karachi. The head office is in Islamabad, Pakistan.",
+    },
+    {
+      q: "How do I request a talc quote or sample?",
+      a: "Use the quote form and say whether you need lumps or powder, the colour grade, the mesh or lump size, the quantity and the destination. You can also email contact@paktalc.com or call +92 312 5112324.",
+    },
+  ],
   "/talc/": [
     {
       q: "What is talc?",

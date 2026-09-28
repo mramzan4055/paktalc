@@ -10,7 +10,7 @@
 - [ ] Domain points to the host; SSL certificate active on `paktalc.com` and `www.paktalc.com`
 - [ ] Upload `out/` to web root, and `php-private/` beside it (README → Deploying)
 - [ ] `php-private/config.php`: secret, SMTP, allowed origins; `storage/` writable
-- [ ] SPF/DKIM for the `from` address; send a test enquiry and confirm delivery to info@paktalc.com
+- [ ] SPF/DKIM for the `from` address; send a test enquiry and confirm delivery to contact@paktalc.com
 - [ ] Optional: Cloudflare Turnstile keys (site key at build, secret in config)
 
 ## Verify on production

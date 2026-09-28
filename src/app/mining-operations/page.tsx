@@ -70,7 +70,7 @@ export default function MiningPage() {
             <SectionHead eyebrow="What happens next" title="From the stock area to the mill" id="next">
               <p>
                 In Peshawar the talc is stocked by grade. It is either ground into powder at the meshing plants or sent to Karachi as lumps. The{" "}
-                <Link prefetch={false} href="/processing/">processing page</Link> covers the rest of the journey.
+                <Link href="/processing/">processing page</Link> covers the rest of the journey.
               </p>
             </SectionHead>
             <div className="btn-row">

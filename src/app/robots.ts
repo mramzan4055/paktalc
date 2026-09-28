@@ -12,7 +12,7 @@ const TRAINING_BOTS = ["GPTBot", "Google-Extended", "CCBot", "ClaudeBot", "anthr
 
 export default function robots(): MetadataRoute.Robots {
   const rules: MetadataRoute.Robots["rules"] = [
-    { userAgent: "*", allow: "/", disallow: ["/api/", "/contacts/thank-you/"] },
+    { userAgent: "*", allow: "/", disallow: ["/api/", "/php-private/", "/contacts/thank-you/", "/contact/thank-you/"] },
     { userAgent: ["OAI-SearchBot", "ChatGPT-User", "PerplexityBot", "Googlebot", "Bingbot"], allow: "/", disallow: ["/api/"] },
   ];
   if (!allowAITraining) rules.push({ userAgent: TRAINING_BOTS, disallow: "/" });

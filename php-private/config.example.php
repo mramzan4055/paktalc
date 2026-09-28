@@ -15,10 +15,10 @@ return [
     'secret' => 'CHANGE_ME_TO_A_LONG_RANDOM_STRING_CHANGE_ME_TO_A_LONG_RANDOM_STRING',
 
     // Where enquiries are delivered, and the From address (must be a mailbox on your domain for SPF/DKIM).
-    'to' => 'info@paktalc.com',
-    'from' => 'noreply@paktalc.com',
+    'to' => 'contact@paktalc.com',
+    'from' => 'contact@paktalc.com',
     'from_name' => 'PakTalc website',
-    'public_email' => 'info@paktalc.com',
+    'public_email' => 'contact@paktalc.com',
 
     // Browser origins allowed to post the form.
     'allowed_origins' => ['https://paktalc.com', 'https://www.paktalc.com', 'http://localhost:8080', 'http://127.0.0.1:8080'],
@@ -26,10 +26,10 @@ return [
     // "mail" (PHP mail()), "smtp" (recommended), or "log" (writes .eml files to storage/outbox — for testing only).
     'transport' => 'smtp',
     'smtp' => [
-        'host' => 'mail.paktalc.com',
-        'port' => 587,
-        'secure' => 'tls',   // tls = STARTTLS on 587, ssl = implicit TLS on 465
-        'username' => 'noreply@paktalc.com',
+        'host' => 'smtp.hostinger.com',
+        'port' => 465,
+        'secure' => 'ssl',   // Hostinger: ssl on 465. tls = STARTTLS on 587.
+        'username' => 'contact@paktalc.com',
         'password' => '',
     ],
 

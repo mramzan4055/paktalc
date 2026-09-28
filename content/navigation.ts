@@ -38,7 +38,6 @@ export const mainNav: NavItem[] = [
   { label: "Gallery", href: "/gallery/" },
   { label: "Insights", href: "/insights/" },
   { label: "Contact", href: "/contact/" },
-  { label: "Quote", href: "/contacts/" },
 ];
 
 export const footerNav: { title: string; links: NavLink[] }[] = [

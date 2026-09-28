@@ -26,7 +26,7 @@ export default function NotFound() {
         <ul className="chip-list chip-list--row">
           {hubs.map((h) => (
             <li key={h.href}>
-              <Link prefetch={false} href={h.href}>{h.label}</Link>
+              <Link href={h.href}>{h.label}</Link>
             </li>
           ))}
         </ul>

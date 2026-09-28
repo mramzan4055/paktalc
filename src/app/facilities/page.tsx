@@ -55,7 +55,7 @@ export default function FacilitiesPage() {
         <div className="container container--wide">
           <SectionHead eyebrow="Sites" title="Where the work is done" id="sites" row>
             <p>
-              Each site has a distinct role in the chain. The <Link prefetch={false} href="/affiliation/#supply-chain">supply chain diagram</Link> shows how talc moves between them.
+              Each site has a distinct role in the chain. The <Link href="/affiliation/#supply-chain">supply chain diagram</Link> shows how talc moves between them.
             </p>
           </SectionHead>
           <CardGrid cols={3}>

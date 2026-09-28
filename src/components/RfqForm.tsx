@@ -2,7 +2,9 @@
 
 import Script from "next/script";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { company } from "@content/company";
 import { Icon } from "./Icon";
+import { MathCaptcha, type CaptchaChallenge } from "./MathCaptcha";
 
 const ENDPOINT = process.env.NEXT_PUBLIC_RFQ_ENDPOINT || "/api/rfq.php";
 const TOKEN_ENDPOINT = process.env.NEXT_PUBLIC_RFQ_TOKEN_ENDPOINT || "/api/rfq-token.php";
@@ -17,7 +19,7 @@ const GRADES = ["White", "Grey", "Green", "Coffee", "Not sure"];
 const noopSubscribe = () => () => {};
 
 /** Client-side checks mirror the PHP validation (server is authoritative). */
-function validate(fd: FormData): Errors {
+function validate(fd: FormData, challenge: CaptchaChallenge | null): Errors {
   const e: Errors = {};
   const s = (k: string) => String(fd.get(k) ?? "").trim();
   if (s("name").length < 2) e.name = "Please enter your name.";
@@ -27,6 +29,8 @@ function validate(fd: FormData): Errors {
   if (!s("form")) e.form = "Please choose a product form.";
   if (s("message").length < 10) e.message = "Please describe your requirement (at least 10 characters).";
   if (!fd.get("consent")) e.consent = "Please agree so we can reply to your enquiry.";
+  if (!challenge) e.captcha = "The check is still loading. Please wait a moment and try again.";
+  else if (Number(s("captcha_answer")) !== challenge.a + challenge.b) e.captcha = "That answer does not match. Please try the sum again.";
   return e;
 }
 
@@ -45,15 +49,21 @@ export function RfqForm({ defaultForm = "" }: { defaultForm?: "lumps" | "powder"
   const [status, setStatus] = useState<Status>("idle");
   const [serverMsg, setServerMsg] = useState("");
   const [token, setToken] = useState("");
+  const [challenge, setChallenge] = useState<CaptchaChallenge | null>(null);
 
-  // Signed, time-stamped token from the PHP endpoint (CSRF-style + minimum fill time).
+  // Signed token plus a signed addition check (CSRF-style + minimum fill time).
   useEffect(() => {
     let alive = true;
     fetch(TOKEN_ENDPOINT, { credentials: "same-origin", headers: { Accept: "application/json" } })
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d: { token?: string }) => alive && d.token && setToken(d.token))
+      .then((d: { token?: string; captcha?: CaptchaChallenge }) => {
+        if (!alive) return;
+        if (d.token) setToken(d.token);
+        if (d.captcha?.proof) setChallenge(d.captcha);
+      })
       .catch(() => {
-        /* Submit will report a friendly error if the token is unavailable. */
+        // Dev preview has no PHP. Show a sum anyway; the live server replaces this with a signed check.
+        if (alive) setChallenge({ a: 1 + Math.floor(Math.random() * 9), b: 1 + Math.floor(Math.random() * 9), proof: "" });
       });
     return () => {
       alive = false;
@@ -63,7 +73,7 @@ export function RfqForm({ defaultForm = "" }: { defaultForm?: "lumps" | "powder"
   async function onSubmit(ev: React.FormEvent<HTMLFormElement>) {
     ev.preventDefault();
     const fd = new FormData(ev.currentTarget);
-    const found = validate(fd);
+    const found = validate(fd, challenge);
     setErrors(found);
     if (Object.keys(found).length) {
       setStatus("error");
@@ -74,13 +84,16 @@ export function RfqForm({ defaultForm = "" }: { defaultForm?: "lumps" | "powder"
     setStatus("sending");
     try {
       const res = await fetch(ENDPOINT, { method: "POST", body: fd, credentials: "same-origin", headers: { Accept: "application/json" } });
-      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; message?: string; errors?: Errors };
+      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; message?: string; errors?: Errors; captcha?: CaptchaChallenge };
       if (res.ok && data.ok) {
         setStatus("sent");
         setServerMsg(data.message || "Thank you — your enquiry has been sent.");
         formRef.current?.reset();
         return;
       }
+      if (data.captcha?.proof) setChallenge(data.captcha);
+      const captchaInput = formRef.current?.querySelector<HTMLInputElement>('[name="captcha_answer"]');
+      if (captchaInput && data.errors?.captcha) captchaInput.value = "";
       setErrors(data.errors || {});
       setStatus("error");
       setServerMsg(data.message || "Your enquiry could not be sent. Please check the form and try again.");
@@ -282,6 +295,8 @@ export function RfqForm({ defaultForm = "" }: { defaultForm?: "lumps" | "powder"
 
       {TURNSTILE_KEY ? <div className="cf-turnstile" data-sitekey={TURNSTILE_KEY} data-theme="light" /> : null}
 
+      <MathCaptcha idPrefix="f" challenge={challenge} error={errors.captcha} />
+
       <div className={`field field--check${errors.consent ? " has-error" : ""}`}>
         <label className="choice choice--check" htmlFor="f-consent">
           <input id="f-consent" type="checkbox" name="consent" value="yes" required aria-invalid={!!errors.consent} aria-describedby={describedBy("consent")} />
@@ -297,7 +312,9 @@ export function RfqForm({ defaultForm = "" }: { defaultForm?: "lumps" | "powder"
           <span>{status === "sending" ? "Sending…" : "Send enquiry"}</span>
           <Icon name="arrow" size={18} className="btn__icon" />
         </button>
-        <p className="small muted">Prefer email? Write to info@paktalc.com.</p>
+        <p className="small muted">
+          Prefer email? Write to <a href={`mailto:${company.email}`}>{company.email}</a>.
+        </p>
       </div>
     </form>
   );

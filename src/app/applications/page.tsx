@@ -81,11 +81,11 @@ export default function ApplicationsPage() {
                   </div>
                   <p className="app__form">
                     <strong>Usual form:</strong> {a.form}.{" "}
-                    <Link prefetch={false} href="/talc/powder/">Talc powder</Link>
+                    <Link href="/talc/powder/">Talc powder</Link>
                     {a.form.toLowerCase().includes("lump") ? (
                       <>
                         {" · "}
-                        <Link prefetch={false} href="/talc/lumps/">Talc lumps</Link>
+                        <Link href="/talc/lumps/">Talc lumps</Link>
                       </>
                     ) : null}
                   </p>

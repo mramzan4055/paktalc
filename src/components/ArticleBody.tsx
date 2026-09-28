@@ -72,7 +72,7 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
                   <aside key={i} className="callout">
                     <p>{b.text}</p>
                     {b.href ? (
-                      <Link prefetch={false} href={b.href} className="text-link">
+                      <Link href={b.href} className="text-link">
                         <span>{b.label ?? "Read more"}</span>
                         <Icon name="arrow" size={16} className="text-link__icon" />
                       </Link>

@@ -168,7 +168,7 @@ export function RelatedLinks({ title = "Continue reading", links }: { title?: st
           const thumb = thumbFor(l.href);
           return (
             <li key={l.href}>
-              <Link prefetch={false} href={l.href} className={`related__link${thumb ? " has-thumb" : ""}`}>
+              <Link href={l.href} className={`related__link${thumb ? " has-thumb" : ""}`}>
                 {thumb ? (
                   <span className="related__thumb">
                     <Picture slot={thumb} sizes="96px" alt="" noUpscale={false} />

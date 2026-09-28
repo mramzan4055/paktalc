@@ -11,4 +11,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'GET') {
 $config = pt_config();
 pt_check_origin($config);
 header('Content-Type: application/json; charset=utf-8');
-echo json_encode(['token' => pt_issue_token($config)]);
+echo json_encode([
+    'token' => pt_issue_token($config),
+    'captcha' => pt_issue_captcha($config),
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);

@@ -49,7 +49,7 @@ export default function InsightsPage() {
                 </span>
               </p>
               <h2 className="card__title">
-                <Link prefetch={false} href={`/insights/${lead.slug}/`} className="card__link">
+                <Link href={`/insights/${lead.slug}/`} className="card__link">
                   {lead.title}
                 </Link>
               </h2>

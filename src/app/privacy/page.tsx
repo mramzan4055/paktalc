@@ -49,7 +49,8 @@ export default function PrivacyPage() {
           </p>
           <h2>Spam protection</h2>
           <p>
-            If spam protection by a third party (such as Cloudflare Turnstile) is enabled on the form, that provider processes technical information about your browser to
+            The enquiry and contact forms ask you to solve a short sum, such as 2 + 3. That answer is checked on this website and is not sent to another company.
+            If an extra spam check by a third party (such as Cloudflare Turnstile) is enabled, that provider processes technical information about your browser to
             tell people from automated submissions.
           </p>
           <h2>How long we keep it</h2>

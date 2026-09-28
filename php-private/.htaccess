@@ -1,2 +1,2 @@
-# Safety net in case this folder is ever uploaded inside the web root by mistake.
+# Deny every request. Secrets live here. Apache still applies this if the folder is inside the web root.
 Require all denied

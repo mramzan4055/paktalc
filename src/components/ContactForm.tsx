@@ -1,8 +1,10 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState } from "react";
+import { company } from "@content/company";
 import { Icon } from "./Icon";
+import { MathCaptcha, type CaptchaChallenge } from "./MathCaptcha";
 
 const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || "/api/contact.php";
 const TOKEN_ENDPOINT = process.env.NEXT_PUBLIC_RFQ_TOKEN_ENDPOINT || "/api/rfq-token.php";
@@ -11,9 +13,7 @@ const TURNSTILE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "";
 type Errors = Partial<Record<string, string>>;
 type Status = "idle" | "sending" | "sent" | "error";
 
-const noopSubscribe = () => () => {};
-
-function validate(fd: FormData): Errors {
+function validate(fd: FormData, challenge: CaptchaChallenge | null): Errors {
   const e: Errors = {};
   const s = (k: string) => String(fd.get(k) ?? "").trim();
   if (s("name").length < 2) e.name = "Please enter your name.";
@@ -22,6 +22,8 @@ function validate(fd: FormData): Errors {
   if (s("subject").length < 3) e.subject = "Please enter a subject.";
   if (s("message").length < 10) e.message = "Please enter your message (at least 10 characters).";
   if (!fd.get("consent")) e.consent = "Please agree so we can reply to your message.";
+  if (!challenge) e.captcha = "The check is still loading. Please wait a moment and try again.";
+  else if (Number(s("captcha_answer")) !== challenge.a + challenge.b) e.captcha = "That answer does not match. Please try the sum again.";
   return e;
 }
 
@@ -32,21 +34,27 @@ export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [serverMsg, setServerMsg] = useState("");
   const [token, setToken] = useState("");
+  const [challenge, setChallenge] = useState<CaptchaChallenge | null>(null);
 
-  // Fetch signed CSRF token on mount
   useEffect(() => {
     let alive = true;
     fetch(TOKEN_ENDPOINT, { credentials: "same-origin", headers: { Accept: "application/json" } })
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d: { token?: string }) => alive && d.token && setToken(d.token))
-      .catch(() => {});
+      .then((d: { token?: string; captcha?: CaptchaChallenge }) => {
+        if (!alive) return;
+        if (d.token) setToken(d.token);
+        if (d.captcha?.proof) setChallenge(d.captcha);
+      })
+      .catch(() => {
+        if (alive) setChallenge({ a: 1 + Math.floor(Math.random() * 9), b: 1 + Math.floor(Math.random() * 9), proof: "" });
+      });
     return () => { alive = false; };
   }, []);
 
   async function onSubmit(ev: React.FormEvent<HTMLFormElement>) {
     ev.preventDefault();
     const fd = new FormData(ev.currentTarget);
-    const found = validate(fd);
+    const found = validate(fd, challenge);
     setErrors(found);
     if (Object.keys(found).length) {
       setStatus("error");
@@ -62,13 +70,16 @@ export function ContactForm() {
         credentials: "same-origin",
         headers: { Accept: "application/json" },
       });
-      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; message?: string; errors?: Errors };
+      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; message?: string; errors?: Errors; captcha?: CaptchaChallenge };
       if (res.ok && data.ok) {
         setStatus("sent");
         setServerMsg(data.message || "Thank you — your message has been sent.");
         formRef.current?.reset();
         return;
       }
+      if (data.captcha?.proof) setChallenge(data.captcha);
+      const captchaInput = formRef.current?.querySelector<HTMLInputElement>('[name="captcha_answer"]');
+      if (captchaInput && data.errors?.captcha) captchaInput.value = "";
       setErrors(data.errors || {});
       setStatus("error");
       setServerMsg(data.message || "Your message could not be sent. Please check the form and try again.");
@@ -265,6 +276,8 @@ export function ContactForm() {
 
       {TURNSTILE_KEY ? <div className="cf-turnstile" data-sitekey={TURNSTILE_KEY} data-theme="light" /> : null}
 
+      <MathCaptcha idPrefix="cf" challenge={challenge} error={errors.captcha} />
+
       {/* Consent */}
       <div className={`field field--check${errors.consent ? " has-error" : ""}`}>
         <label className="choice choice--check" htmlFor="cf-consent">
@@ -291,7 +304,9 @@ export function ContactForm() {
           <span>{status === "sending" ? "Sending…" : "Send Enquiry"}</span>
           <Icon name="arrow" size={18} className="btn__icon" />
         </button>
-        <p className="small muted">Prefer email? Write to info@paktalc.com.</p>
+        <p className="small muted">
+          Prefer email? Write to <a href={`mailto:${company.email}`}>{company.email}</a>.
+        </p>
       </div>
     </form>
   );

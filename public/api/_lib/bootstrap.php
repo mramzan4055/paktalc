@@ -25,7 +25,8 @@ function pt_config(): array
     }
     $candidates = array_filter([
         getenv('PAKTALC_CONFIG') ?: null,
-        dirname(__DIR__, 3) . '/php-private/config.php', // <web root>/../php-private/config.php
+        dirname(__DIR__, 3) . '/php-private/config.php', // sibling of the web root (preferred)
+        dirname(__DIR__, 2) . '/php-private/config.php', // inside the web root, denied by .htaccess (one-zip upload)
         dirname(__DIR__, 4) . '/php-private/config.php',
     ]);
     foreach ($candidates as $file) {
@@ -110,6 +111,62 @@ function pt_issue_token(array $config): string
     $nonce = pt_b64url(random_bytes(16));
     $sig = pt_b64url(hash_hmac('sha256', $ts . '.' . $nonce, (string) $config['secret'], true));
     return $ts . '.' . $nonce . '.' . $sig;
+}
+
+/**
+ * Easy addition check. The two numbers are public; the proof is an HMAC so a
+ * submission cannot invent its own question or reuse an expired one.
+ * @return array{a:int,b:int,proof:string}
+ */
+function pt_issue_captcha(array $config): array
+{
+    $a = random_int(1, 9);
+    $b = random_int(1, 9);
+    $exp = time() + PT_TOKEN_MAX_AGE;
+    $sig = pt_b64url(hash_hmac('sha256', "captcha.{$a}.{$b}.{$exp}", (string) $config['secret'], true));
+    return ['a' => $a, 'b' => $b, 'proof' => $exp . '.' . $sig];
+}
+
+/** Returns null when the sum matches the signed challenge, otherwise a reason. */
+function pt_verify_captcha(array $config, mixed $aRaw, mixed $bRaw, mixed $proofRaw, mixed $answerRaw): ?string
+{
+    $a = filter_var($aRaw, FILTER_VALIDATE_INT);
+    $b = filter_var($bRaw, FILTER_VALIDATE_INT);
+    $answerText = is_string($answerRaw) ? trim($answerRaw) : (is_int($answerRaw) ? (string) $answerRaw : '');
+    $answer = filter_var($answerText, FILTER_VALIDATE_INT);
+    $proof = is_string($proofRaw) ? $proofRaw : '';
+    if ($a === false || $b === false || $a < 1 || $a > 9 || $b < 1 || $b > 9) {
+        return 'malformed';
+    }
+    $parts = explode('.', $proof, 2);
+    if (count($parts) !== 2 || !ctype_digit($parts[0]) || !preg_match('/^[A-Za-z0-9_-]+$/', $parts[1])) {
+        return 'malformed';
+    }
+    $exp = (int) $parts[0];
+    if ($exp < time()) {
+        return 'expired';
+    }
+    if ($exp > time() + PT_TOKEN_MAX_AGE + 120) {
+        return 'malformed';
+    }
+    $expected = pt_b64url(hash_hmac('sha256', "captcha.{$a}.{$b}.{$exp}", (string) $config['secret'], true));
+    if (!hash_equals($expected, $parts[1])) {
+        return 'bad signature';
+    }
+    if ($answer === false || $answer !== $a + $b) {
+        return 'wrong';
+    }
+    return null;
+}
+
+/** Validation failure that can include a fresh sum when the previous check expired. */
+function pt_form_fail(int $status, string $message, array $errors, array $config, bool $refreshCaptcha, string $redirect): never
+{
+    $payload = ['ok' => false, 'message' => $message, 'errors' => (object) $errors];
+    if ($refreshCaptcha) {
+        $payload['captcha'] = pt_issue_captcha($config);
+    }
+    pt_respond($status, $payload, $redirect);
 }
 
 /** Returns null when valid, otherwise a reason string. Rejects tokens already consumed (replay). */

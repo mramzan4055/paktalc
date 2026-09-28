@@ -22,9 +22,9 @@ export const heroSlides: HeroSlide[] = [
     label: "Talc supply",
     image: { slot: "talc-hero", variant: "banner-16x9", mobileVariant: "mobile-4x5" },
     eyebrow: "PakTalc · a division of SKZ Mining Company Pvt. Ltd.",
-    title: "Talc, sorted at the mine and milled to your specification.",
+    title: "Talc lumps and powder, supplied from Pakistan.",
     description:
-      "Hand-sorted talc lumps and ground talc powder for industrial buyers. Grinding is done in Peshawar, and export orders are packed in Karachi, Pakistan.",
+      "PakTalc supplies hand-sorted talc lumps and ground talc powder for industrial buyers. Grinding is done in Peshawar, and export orders are packed in Karachi.",
     primary: { label: "Request a quote", href: "/contacts/#rfq" },
     secondary: { label: "Explore talc", href: "/talc/" },
   },

@@ -100,7 +100,7 @@ export default function AffiliationPage() {
           <SectionHead eyebrow="Supply chain" title="From the mines to Karachi" id="supply-chain-title" row>
             <p>
               Talc from both source groups meets in Peshawar. It is stocked and segregated there, then packed and exported from Karachi. See{" "}
-              <Link prefetch={false} href="/facilities/">facilities</Link>.
+              <Link href="/facilities/">facilities</Link>.
             </p>
           </SectionHead>
           <div className="chain-docs">

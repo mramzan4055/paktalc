@@ -86,7 +86,7 @@ export default function ContactsPage() {
                   </li>
                 ))}
               </ul>
-              <Link prefetch={false} href="/facilities/" className="text-link">
+              <Link href="/facilities/" className="text-link">
                 <span>About our facilities</span>
                 <Icon name="arrow" size={16} className="text-link__icon" />
               </Link>

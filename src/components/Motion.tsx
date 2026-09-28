@@ -1,46 +1,65 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { footerNav, mainNav, rfqHref } from "@content/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useLayoutEffect } from "react";
+
+/** Every page a visitor can open from the menu, loaded before they click. */
+function routesToPrefetch(): string[] {
+  const hrefs = new Set<string>([rfqHref.split("#")[0]]);
+  for (const item of mainNav) {
+    hrefs.add(item.href);
+    for (const child of item.children ?? []) hrefs.add(child.href.split("#")[0]);
+  }
+  for (const col of footerNav) {
+    for (const link of col.links) hrefs.add(link.href.split("#")[0]);
+  }
+  return [...hrefs];
+}
 
 /**
- * One IntersectionObserver for the whole page:
- *  - [data-reveal] / [data-stagger] get .is-in when they enter the viewport
- *  - [data-progress] gets --progress (0–1) while it scrolls through the viewport (process lines)
- * Content is never hidden without JS: hiding CSS only applies under html.js (set inline in <head>).
- * prefers-reduced-motion: everything is marked visible immediately.
+ * Keeps page changes fast:
+ *  - menu routes are fetched as soon as the browser is idle, so a click does not wait on the network
+ *  - the new page is shown immediately (reveal animations no longer hide it until JavaScript measures it)
+ *  - a short fade runs only after the first click, not on the opening load
  */
 export function Motion() {
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const els = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal], [data-stagger]"));
-    if (reduce || !("IntersectionObserver" in window)) {
-      els.forEach((el) => el.classList.add("is-in"));
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            e.target.classList.add("is-in");
-            io.unobserve(e.target);
-          }
-        }
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
-    );
-    els.forEach((el) => {
-      if (el.dataset.stagger !== undefined) {
-        Array.from(el.children).forEach((c, i) => (c as HTMLElement).style.setProperty("--i", String(Math.min(i, 8))));
-      }
-      io.observe(el);
-    });
-    // Failsafe: content must never stay hidden (restored scroll, fast jumps, odd observer edge cases).
-    const failsafe = window.setTimeout(() => els.forEach((el) => el.classList.add("is-in")), 2500);
+    const onClick = (event: MouseEvent) => {
+      const anchor = (event.target as Element | null)?.closest?.("a");
+      if (!anchor) return;
+      const url = new URL(anchor.href, window.location.href);
+      if (url.origin !== window.location.origin || url.pathname === window.location.pathname) return;
+      document.documentElement.dataset.nav = "1";
+    };
+    document.addEventListener("click", onClick, true);
 
-    // Scroll-linked progress for process timelines (transform-only, rAF throttled).
+    const prefetch = () => {
+      for (const href of routesToPrefetch()) {
+        if (href !== window.location.pathname) router.prefetch(href);
+      }
+    };
+    const idle = window.requestIdleCallback?.(prefetch);
+    const timer = idle === undefined ? window.setTimeout(prefetch, 400) : 0;
+
+    return () => {
+      document.removeEventListener("click", onClick, true);
+      if (idle !== undefined) window.cancelIdleCallback(idle);
+      if (timer) window.clearTimeout(timer);
+    };
+  }, [router]);
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    root.style.scrollBehavior = "auto";
+    if (!window.location.hash) window.scrollTo(0, 0);
+    const restoreScroll = window.setTimeout(() => {
+      root.style.scrollBehavior = "";
+    }, 80);
+
     const progressEls = Array.from(document.querySelectorAll<HTMLElement>("[data-progress]"));
     let raf = 0;
     const update = () => {
@@ -61,8 +80,8 @@ export function Motion() {
       window.addEventListener("resize", onScroll);
     }
     return () => {
-      window.clearTimeout(failsafe);
-      io.disconnect();
+      window.clearTimeout(restoreScroll);
+      root.style.scrollBehavior = "";
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
       if (raf) cancelAnimationFrame(raf);

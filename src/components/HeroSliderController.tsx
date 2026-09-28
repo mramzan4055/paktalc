@@ -17,16 +17,15 @@ const getReduced = () => window.matchMedia("(prefers-reduced-motion: reduce)").m
 
 /**
  * One source of truth (`index`) drives image, heading, text and CTAs together — they are the same slide element.
- * Autoplay pauses on hover, keyboard focus, hidden tab or the pause button; manual navigation restarts the timer.
+ * Autoplay pauses on keyboard focus, hidden tab or the pause button; manual navigation restarts the timer.
  * With prefers-reduced-motion the slides still rotate (slower, no zoom/drift/rise — CSS disables those) and can be paused.
- * Slides 2–3 are not fetched until the page has loaded (protects LCP).
+ * Slides 2–3 are revealed shortly after hydration, without waiting for every page asset to load.
  */
 export function HeroSliderController({ labels, children }: { labels: string[]; children: React.ReactNode }) {
   const n = labels.length;
   const rootRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const [userPaused, setUserPaused] = useState(false);
-  const [hover, setHover] = useState(false);
   const [focusWithin, setFocusWithin] = useState(false);
   const [docHidden, setDocHidden] = useState(false);
   const [ready, setReady] = useState(false);
@@ -35,7 +34,7 @@ export function HeroSliderController({ labels, children }: { labels: string[]; c
   const drag = useRef<{ x: number; y: number } | null>(null);
 
   const playing = !userPaused;
-  const running = playing && !hover && !focusWithin && !docHidden && ready;
+  const running = playing && !focusWithin && !docHidden && ready;
 
   // Reflect the active slide in the DOM (server-rendered slides).
   useEffect(() => {
@@ -53,20 +52,15 @@ export function HeroSliderController({ labels, children }: { labels: string[]; c
     });
   }, [index]);
 
-  // Defer loading of later slides until after the load event (+ a short idle).
+  // Allow LCP image to start first; a slow third-party request cannot block the carousel.
   useEffect(() => {
-    let t: number | undefined;
-    const go = () => {
-      t = window.setTimeout(() => setReady(true), 600);
-    };
-    if (document.readyState === "complete") go();
-    else window.addEventListener("load", go, { once: true });
+    const t = window.setTimeout(() => setReady(true), 1200);
     const onVis = () => setDocHidden(document.hidden);
+    onVis();
     document.addEventListener("visibilitychange", onVis);
     return () => {
-      window.removeEventListener("load", go);
       document.removeEventListener("visibilitychange", onVis);
-      if (t) window.clearTimeout(t);
+      window.clearTimeout(t);
     };
   }, []);
 
@@ -113,8 +107,6 @@ export function HeroSliderController({ labels, children }: { labels: string[]; c
     <div
       ref={rootRef}
       className={`hero-slider__root${ready ? " is-ready" : ""}${running ? " is-running" : ""}`}
-      onPointerEnter={(e) => e.pointerType === "mouse" && setHover(true)}
-      onPointerLeave={(e) => e.pointerType === "mouse" && setHover(false)}
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
       onPointerCancel={() => (drag.current = null)}

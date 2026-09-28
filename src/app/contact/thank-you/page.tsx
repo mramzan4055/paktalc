@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { seo } from "@content/seo";
 import { JsonLd } from "@/components/ui";
 import { pageMetadata } from "@/lib/seo";
-import { breadcrumb, graph, webPage } from "@/lib/schema";
+import { graph, webPage } from "@/lib/schema";
 
 export const metadata = pageMetadata("/contact/thank-you/");
 

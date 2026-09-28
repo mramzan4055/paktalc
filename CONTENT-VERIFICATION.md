@@ -10,7 +10,7 @@ Where a fact *is* published, the page location is listed so it can be edited in 
 |---|---|---|---|---|
 | A1 | Head office address | paktalc.com/contacts: "411 Gulshan Block, Iqbal Town, Lahore". SKZ site + Affiliation page: "Head Office Islamabad", "P.O Box # 2273, Islamabad 44000" | Shows **Islamabad** (two sources agree), no street address | `content/company.ts` |
 | A2 | Phone numbers | +92 312 5112324 (header of both sites); +92 306 1515313 and +92 319 1515313 (paktalc contact block) | Shows +92 312 5112324 only | `content/company.ts` |
-| A3 | Email | info@paktalc.com (paktalc), info@skzminingcompany.com (SKZ) | info@paktalc.com | `content/company.ts` |
+| A3 | Email | contact@paktalc.com (mailbox that sends and receives site mail) | contact@paktalc.com | `content/company.ts`, `php-private/config.php` |
 | A4 | WhatsApp number | Joinchat widget present, number not visible | Not shown | — |
 | A5 | Social profiles | Placeholders only | Not shown | `content/company.ts` (`social: []`) |
 | A6 | SKZ licence "No. 44587", "SKZ Mining, 2000 – 2017" | SKZ contacts page | Not published | — |

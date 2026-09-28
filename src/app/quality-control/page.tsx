@@ -176,7 +176,7 @@ export default function QualityPage() {
           <SectionHead eyebrow="SKZ Laboratory Peshawar" title="In the laboratory" id="lab" row>
             <p>
               Technicians prepare and dry samples, then run particle-size, colour and chemical analyses. If you need independent third-party inspection, mention it when you{" "}
-              <Link prefetch={false} href="/contacts/#rfq">send your enquiry</Link>.
+              <Link href="/contacts/#rfq">send your enquiry</Link>.
             </p>
           </SectionHead>
           <div className="grid grid-3" data-stagger>

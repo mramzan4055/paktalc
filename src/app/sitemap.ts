@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
 import { seo } from "@content/seo";
 import { articles } from "@content/insights";
-import { site } from "@content/company";
+import { contentUpdated, site } from "@content/company";
 import { getSlot, getVariant, largest, slotsForPage } from "@/lib/images";
 
 export const dynamic = "force-static";
 
-/** Build date for static pages; articles use their own dateModified. */
-const BUILD_DATE = new Date().toISOString().slice(0, 10);
+/** Content edit date for static pages; articles use their own dateModified. */
+const BUILD_DATE = contentUpdated;
 
 const priority: Record<string, number> = {
   "/": 1,

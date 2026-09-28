@@ -147,7 +147,7 @@ export default function TalcPowderPage() {
           <SectionHead eyebrow="Laboratory" title="Published sample results" id="results" row>
             <p>
               Two powder samples tested at SKZ Laboratory Peshawar. These results show how we measure; they are not a fixed specification. The{" "}
-              <Link prefetch={false} href="/quality-control/">quality control page</Link> shows the full reports and methods.
+              <Link href="/quality-control/">quality control page</Link> shows the full reports and methods.
             </p>
           </SectionHead>
           <div className="table-wrap" role="region" aria-label="Sample results comparison" tabIndex={0}>

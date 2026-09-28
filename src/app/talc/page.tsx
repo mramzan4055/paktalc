@@ -62,7 +62,7 @@ export default function TalcPage() {
             <p className="prose">
               Industry uses talc for three things: its softness, its thin plate-like particles, and a surface that repels water but mixes readily with oils and resins.
               Those properties make it a functional ingredient in plastics, paints, paper, ceramics and rubber, not just a filler. The{" "}
-              <Link prefetch={false} href="/applications/">applications page</Link> explains what talc does in each industry.
+              <Link href="/applications/">applications page</Link> explains what talc does in each industry.
             </p>
           </div>
           <dl className="spec-list spec-list--compact" data-stagger>
@@ -98,7 +98,7 @@ export default function TalcPage() {
           <SectionHead eyebrow="Product forms" title="Talc lumps and talc powder" id="forms-title" row>
             <p>
               Lumps suit buyers who grind in-house. Powder suits buyers who need a ready particle size. Our{" "}
-              <Link prefetch={false} href="/insights/talc-lumps-vs-talc-powder/">comparison guide</Link> covers the choice in detail.
+              <Link href="/insights/talc-lumps-vs-talc-powder/">comparison guide</Link> covers the choice in detail.
             </p>
           </SectionHead>
           <CardGrid cols={2}>
@@ -174,7 +174,7 @@ export default function TalcPage() {
             </div>
             <p className="small muted">
               Afghan talc is handled through Afghan Talc Ltd.&apos;s processing plant in Jalalabad before it reaches Peshawar. Pakistani talc goes from mine stock areas
-              direct to Peshawar. See the <Link prefetch={false} href="/affiliation/#supply-chain">supply chain</Link>.
+              direct to Peshawar. See the <Link href="/affiliation/#supply-chain">supply chain</Link>.
             </p>
           </div>
           <div className="doc-frame" data-reveal>
@@ -207,7 +207,7 @@ export default function TalcPage() {
           <ul className="chip-list" data-stagger>
             {applications.map((a) => (
               <li key={a.id}>
-                <Link prefetch={false} href={`/applications/#${a.id}`}>{a.name}</Link>
+                <Link href={`/applications/#${a.id}`}>{a.name}</Link>
               </li>
             ))}
           </ul>

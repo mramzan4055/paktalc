@@ -1,5 +1,5 @@
 /** JSON-LD builders. Only verified facts; see SCHEMA-PLAN.md. */
-import { company, site } from "@content/company";
+import { company, contentUpdated, site } from "@content/company";
 import { absolute } from "./seo";
 import { getSlot, getVariant, largest } from "./images";
 
@@ -9,8 +9,8 @@ export const WEBSITE_ID = `${site.url}/#website`;
 
 type Json = Record<string, unknown>;
 
-/** Build date — used as dateModified so pages carry a freshness signal. */
-const BUILD_DATE = new Date().toISOString().slice(0, 10);
+/** Content edit date from content/company.ts — not the clock at build time. */
+const BUILD_DATE = contentUpdated;
 
 export function organization(): Json {
   return {
@@ -57,8 +57,7 @@ export function organization(): Json {
       "Talc for paper",
       "Talc for ceramics",
       "Talc for rubber",
-      "Cosmetic grade talc",
-      "Industrial grade talc",
+      "Industrial talc",
       "Mineral processing Pakistan",
       "Talc export Pakistan",
       "Magnesium silicate",
@@ -82,16 +81,9 @@ export function website(): Json {
     "@id": WEBSITE_ID,
     url: `${site.url}/`,
     name: site.name,
+    description: company.shortDescription,
     publisher: { "@id": ORG_ID },
     inLanguage: "en",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${site.url}/insights/?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

@@ -19,13 +19,13 @@
   display: flex;
   min-height: min(calc(100svh - var(--header-h)), 46rem);
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 900ms var(--ease-in-out), visibility 0s linear 900ms;
+  pointer-events: none;
+  /* Opacity only, so the slide change stays on the compositor and does not block the main thread. */
+  transition: opacity 700ms var(--ease-in-out);
 }
 .hero-slide[data-active] {
   opacity: 1;
-  visibility: visible;
-  transition-delay: 0s;
+  pointer-events: auto;
   z-index: 1;
 }
 @media (min-width: 48em) {
@@ -39,7 +39,7 @@
   inset: 0;
   z-index: -2;
 }
-/* Later slides are not fetched until the controller marks the slider ready (after window load). */
+/* Later slides wait for the controller's short hydration delay. */
 .hero-slider__root:not(.is-ready) .hero-slide:not([data-slide="0"]) .hero-slide__media {
   display: none;
 }

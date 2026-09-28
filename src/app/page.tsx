@@ -3,8 +3,10 @@ import { company } from "@content/company";
 import { applications } from "@content/applications";
 import { articles } from "@content/insights";
 import { labReports, packing } from "@content/talc";
+import { faqs } from "@content/faq";
 import { seo } from "@content/seo";
 import { Picture } from "@/components/Picture";
+import { Faq } from "@/components/Faq";
 import { Button, JsonLd, SectionHead, TextLink } from "@/components/ui";
 import { CtaBand } from "@/components/sections";
 import { Explorer } from "@/components/Explorer";
@@ -12,7 +14,8 @@ import { HeroSlider } from "@/components/HeroSlider";
 import { Card, CardGrid } from "@/components/Card";
 import { Icon } from "@/components/Icon";
 import { pageMetadata } from "@/lib/seo";
-import { graph, webPage } from "@/lib/schema";
+import { faqPage, graph, webPage } from "@/lib/schema";
+import { absolute } from "@/lib/seo";
 
 export const metadata = pageMetadata("/");
 
@@ -37,7 +40,21 @@ export default function HomePage() {
   const s = seo["/"];
   return (
     <>
-      <JsonLd data={graph(webPage({ path: "/", name: s.title, description: s.description, imageSlot: "talc-hero" }))} />
+      <JsonLd
+        data={graph(
+          webPage({ path: "/", name: s.title, description: s.description, imageSlot: "talc-hero" }),
+          {
+            "@type": "ItemList",
+            "@id": `${absolute("/")}#products`,
+            name: "Talc supplied by PakTalc",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Talc lumps", url: absolute("/talc/lumps/") },
+              { "@type": "ListItem", position: 2, name: "Talc powder", url: absolute("/talc/powder/") },
+            ],
+          },
+          faqPage("/", faqs["/"]),
+        )}
+      />
 
       {/* 1 — Hero slider (3 synchronised slides) */}
       <HeroSlider />
@@ -167,7 +184,7 @@ export default function HomePage() {
                       </button>
                     </h3>
                     <p className="explorer__summary">{c.summary}</p>
-                    <Link prefetch={false} href={c.href} className="text-link explorer__more">
+                    <Link href={c.href} className="text-link explorer__more">
                       <span>
                         Learn more<span className="sr-only"> about {c.title.toLowerCase()}</span>
                       </span>
@@ -199,7 +216,7 @@ export default function HomePage() {
           <ul className="app-list" data-stagger>
             {applications.map((a) => (
               <li key={a.id}>
-                <Link prefetch={false} href={`/applications/#${a.id}`} className="app-list__link">
+                <Link href={`/applications/#${a.id}`} className="app-list__link">
                   <span className="app-list__name">{a.name}</span>
                   <span className="app-list__why">{a.why}</span>
                   <Icon name="arrow" size={18} className="app-list__icon" />
@@ -313,7 +330,7 @@ export default function HomePage() {
           <ul className="gallery-preview" data-stagger>
             {galleryPreview.map((slot) => (
               <li key={slot}>
-                <Link prefetch={false} href="/gallery/" className="gallery-preview__link" tabIndex={-1} aria-hidden="true">
+                <Link href="/gallery/" className="gallery-preview__link" tabIndex={-1} aria-hidden="true">
                   <Picture slot={slot} sizes="(min-width: 64em) 30vw, 50vw" noUpscale={false} />
                 </Link>
               </li>
@@ -390,6 +407,15 @@ export default function HomePage() {
               All insights
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section className="section" aria-labelledby="faq-title" id="faq">
+        <div className="container container--wide split split--top">
+          <SectionHead eyebrow="Questions" title="Answers buyers look for first" id="faq-title">
+            <p>Short answers from the same facts published on this site. For a grade, mesh or packing plan, send an enquiry.</p>
+          </SectionHead>
+          <Faq items={faqs["/"]} />
         </div>
       </section>
 

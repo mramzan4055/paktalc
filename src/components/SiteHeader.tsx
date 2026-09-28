@@ -146,7 +146,7 @@ export function SiteHeader() {
     <>
       <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
         <div className="container container--wide site-header__bar">
-          <Link prefetch={false} href="/" className="site-header__brand" aria-label="PakTalc — home">
+          <Link href="/" className="site-header__brand" aria-label="PakTalc — home">
             <Logo />
           </Link>
 
@@ -159,7 +159,6 @@ export function SiteHeader() {
                   return (
                     <li key={id} className="nav__item">
                       <Link
-                        prefetch={false}
                         href={item.href}
                         className={`nav__link${active ? " is-active" : ""}`}
                         aria-current={pathname === item.href ? "page" : undefined}
@@ -176,6 +175,10 @@ export function SiteHeader() {
                     className="nav__item"
                     onPointerEnter={(e) => e.pointerType === "mouse" && openMenu(id)}
                     onPointerLeave={(e) => e.pointerType === "mouse" && scheduleClose()}
+                    onFocusCapture={() => openMenu(id)}
+                    onBlurCapture={(e) => {
+                      if (!e.currentTarget.contains(e.relatedTarget as Node)) scheduleClose();
+                    }}
                   >
                     <button
                       id={`trigger-${id}`}
@@ -200,7 +203,6 @@ export function SiteHeader() {
                         {item.children.map((c) => (
                           <li key={c.href}>
                             <Link
-                              prefetch={false}
                               href={c.href}
                               className="nav__menu-link"
                               aria-current={pathname === c.href ? "page" : undefined}
@@ -220,7 +222,7 @@ export function SiteHeader() {
           </nav>
 
           <div className="site-header__actions">
-            <Link prefetch={false} href={rfqHref} className="btn btn--primary btn--sm site-header__cta">
+            <Link href={rfqHref} className="btn btn--primary btn--sm site-header__cta">
               <span>Request a quote</span>
             </Link>
             <button
@@ -255,7 +257,7 @@ export function SiteHeader() {
         inert={!open}
       >
         <div className="drawer__top">
-          <Link prefetch={false} href="/" aria-label="PakTalc — home" onClick={() => closeDrawer(false)}>
+          <Link href="/" aria-label="PakTalc — home" onClick={() => closeDrawer(false)}>
             <Logo className="drawer__logo" />
           </Link>
           <button type="button" className="drawer__close" aria-label="Close menu" onClick={() => closeDrawer()}>
@@ -272,7 +274,6 @@ export function SiteHeader() {
                 return (
                   <li key={id}>
                     <Link
-                      prefetch={false}
                       href={item.href}
                       className={`drawer__link${active ? " is-active" : ""}`}
                       aria-current={pathname === item.href ? "page" : undefined}
@@ -300,7 +301,6 @@ export function SiteHeader() {
                     {item.children.map((c) => (
                       <li key={c.href}>
                         <Link
-                          prefetch={false}
                           href={c.href}
                           className="drawer__sublink"
                           aria-current={pathname === c.href ? "page" : undefined}
@@ -318,7 +318,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="drawer__foot">
-          <Link prefetch={false} href={rfqHref} className="btn btn--primary btn--block" onClick={() => closeDrawer(false)}>
+          <Link href={rfqHref} className="btn btn--primary btn--block" onClick={() => closeDrawer(false)}>
             <span>Request a quote</span>
             <Icon name="arrow" size={18} className="btn__icon" />
           </Link>
