@@ -1,31 +1,19 @@
 "use client";
 
-import { footerNav, mainNav, rfqHref } from "@content/navigation";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useLayoutEffect } from "react";
-
-/** Every page a visitor can open from the menu, loaded before they click. */
-function routesToPrefetch(): string[] {
-  const hrefs = new Set<string>([rfqHref.split("#")[0]]);
-  for (const item of mainNav) {
-    hrefs.add(item.href);
-    for (const child of item.children ?? []) hrefs.add(child.href.split("#")[0]);
-  }
-  for (const col of footerNav) {
-    for (const link of col.links) hrefs.add(link.href.split("#")[0]);
-  }
-  return [...hrefs];
-}
 
 /**
  * Keeps page changes fast:
- *  - menu routes are fetched as soon as the browser is idle, so a click does not wait on the network
  *  - the new page is shown immediately (reveal animations no longer hide it until JavaScript measures it)
  *  - a short fade runs only after the first click, not on the opening load
+ *
+ * Visible links are prefetched by next/link, one at a time. Loading every menu
+ * route here makes the dev server compile them all at once, so the page you
+ * open waits behind that queue.
  */
 export function Motion() {
   const pathname = usePathname();
-  const router = useRouter();
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
@@ -36,21 +24,8 @@ export function Motion() {
       document.documentElement.dataset.nav = "1";
     };
     document.addEventListener("click", onClick, true);
-
-    const prefetch = () => {
-      for (const href of routesToPrefetch()) {
-        if (href !== window.location.pathname) router.prefetch(href);
-      }
-    };
-    const idle = window.requestIdleCallback?.(prefetch);
-    const timer = idle === undefined ? window.setTimeout(prefetch, 400) : 0;
-
-    return () => {
-      document.removeEventListener("click", onClick, true);
-      if (idle !== undefined) window.cancelIdleCallback(idle);
-      if (timer) window.clearTimeout(timer);
-    };
-  }, [router]);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
 
   useLayoutEffect(() => {
     const root = document.documentElement;

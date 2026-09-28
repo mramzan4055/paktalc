@@ -4,11 +4,11 @@ Machine-readable source: **`content/redirects.ts`** (page URLs) + **`paktalc-ima
 Both are compiled by `scripts/postbuild.mjs` into `out/.htaccess` as `RewriteRule … [R=301,L]` lines.
 
 Rules followed
-- One-to-one mapping to the closest relevant page. Nothing is blanket-redirected to the homepage (only the old home-alias archives go to `/`).
+- One-to-one mapping to the closest relevant page. Legacy path redirects do not blanket-redirect to the homepage.
 - Single hop: every target is a final 200 URL (the checker verifies that no target is itself a redirect source).
 - Kept URLs (no redirect): `/`, `/about/`, `/mining-operations/`, `/applications/`, `/affiliation/`, `/sustainability/`, `/gallery/`, `/contacts/`.
 - Host/protocol: `http://` and `www.` → `https://paktalc.com` in one hop. Missing trailing slash → add slash (except files).
-- Query strings from WP (`?p=123`, `?page_id=`) aren't mapped individually. `/?s=` search URLs return the home page, which is already canonical.
+- Legacy page query strings (including WordPress archive and tracking parameters) are dropped with `QSD` because the new destination pages do not use them. Root WordPress query URLs (`?p=123`, `?page_id=`, `?s=`) resolve directly to `/` with the query removed.
 
 ## Page redirects
 
@@ -29,7 +29,6 @@ Rules followed
 | `/portfolio/*`, `/industrium_portfolio_category/*`, `/projects/*`, `/industrium_project_category/*` | `/gallery/` | Demo |
 | `/team/*`, `/industrium_team_department/*` | `/about/` | Demo profiles |
 | `/careers/*` | `/contacts/` | Demo vacancies |
-| `/contact/` | `/contacts/` | Common mistype of the kept URL |
 | `/feed/`, `/comments/feed/` | `/insights/` | WP feeds (410 would also be fine) |
 
 ## Image redirects

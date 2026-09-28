@@ -27,18 +27,30 @@ const imageRedirects = csv
   .filter((c) => c[0] && c[1])
   .map(([from, to, asset, status]) => ({ from, to, asset, status: status?.trim() || "301" }));
 
-// Validate: every image target must exist in out/
+// Validate: every image target must exist in out/. A broken migration must fail the build.
 const missing = imageRedirects.filter((r) => !existsSync(join(OUT, r.to)));
 if (missing.length) {
-  console.warn(`! ${missing.length} image redirect targets missing in out/:`, missing.slice(0, 5).map((m) => m.to));
+  throw new Error(`${missing.length} image redirect targets missing in out/: ${missing.slice(0, 5).map((m) => m.to).join(", ")}`);
 }
 
-// Validate: page redirect targets are real routes, and never another redirect source (no chains)
-const sources = new Set(redirects.map((r) => r.from));
+// Validate exact and prefix rules against the exported routes, including overlapping prefixes.
+const sources = new Set();
+const current = ["/", ...Object.keys(seo), ...articles.map((a) => `/insights/${a.slug}/`)];
+const matches = (path, r) => path === r.from || (r.prefix && path.startsWith(r.from));
 for (const r of redirects) {
-  if (sources.has(r.to)) throw new Error(`Redirect chain: ${r.from} → ${r.to} is itself redirected`);
+  if (!/^\/(?:[^?#]*\/)?$/.test(r.from) || !/^\/(?:[^?#]*\/)?$/.test(r.to)) {
+    throw new Error(`Redirect paths must be slash-terminated local paths: ${r.from} → ${r.to}`);
+  }
+  if (sources.has(r.from)) throw new Error(`Duplicate redirect source: ${r.from}`);
+  sources.add(r.from);
   const target = join(OUT, r.to, "index.html");
   if (!existsSync(target)) throw new Error(`Redirect target does not exist: ${r.to}`);
+  if (current.some((path) => matches(path, r))) throw new Error(`Redirect shadows a current URL: ${r.from}`);
+  if (redirects.some((other) => matches(r.to, other))) throw new Error(`Redirect chain: ${r.from} → ${r.to} is also a redirect source`);
+}
+for (const r of imageRedirects) {
+  if (r.status !== "301") throw new Error(`Image migration must use 301: ${r.from}`);
+  if (imageRedirects.filter((other) => other.from === r.from).length !== 1) throw new Error(`Duplicate image redirect: ${r.from}`);
 }
 
 // Exact rules first, then prefix rules (longest first) so specific mappings win.
@@ -86,7 +98,7 @@ L("RewriteRule ^wp-(admin|login\\.php|json|includes)(/.*)?$ - [R=410,L]");
 L("RewriteRule ^xmlrpc\\.php$ - [R=410,L]");
 L();
 L(`# --- 2. Legacy WordPress image URLs (${imageRedirects.length} rules, preserves image SEO) ---`);
-for (const r of imageRedirects) L(`RewriteRule ^${esc(strip(r.from))}$ ${abs(r.to)} [R=${r.status},L]`);
+for (const r of imageRedirects) L(`RewriteRule ^${esc(strip(r.from))}$ ${abs(r.to)} [R=${r.status},L,QSD]`);
 L();
 L("# --- 3. Trailing slash for extension-less directory paths (absolute target → also fixes host in the same hop) ---");
 L("RewriteCond %{HTTP_HOST} !^(localhost|127\\.0\\.0\\.1)(:\\d+)?$ [NC]");

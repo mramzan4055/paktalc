@@ -9,6 +9,7 @@ npm install
 npm run dev          # http://localhost:3000 (the PHP form does not run under next dev)
 npm run build        # static export to out/ + .htaccess, llms.txt, redirects.json
 npm run check        # crawl out/: links, meta, canonicals, H1s, JSON-LD, images, sitemap, robots
+npm run check:redirects # HTTP checks of generated .htaccess page rules, final targets, sitemap and old links
 npm run lint && npm run typecheck
 ```
 Test the full site including the form: copy `php-private/config.example.php` → `php-private/config.php` (set `secret`, `transport: 'log'`), then run:
@@ -24,6 +25,7 @@ For Lighthouse, test via `npm run serve:php` in an Incognito window (extensions 
 4. Optional spam check: build with `NEXT_PUBLIC_TURNSTILE_SITE_KEY=...` and set `turnstile_secret`.
 5. Requirements: PHP ≥ 8.1, Apache with `mod_rewrite`, `mod_headers`, `mod_deflate`. Behind Cloudflare, set `trust_proxy: true`.
 6. HTTPS must work before HSTS matters (the header is only sent over HTTPS).
+7. After upload, check old URLs on Hostinger with `curl -I`, including http and www variants. `check:redirects` exercises the generated rules locally; the hosting server must still be checked after deployment.
 
 ## Where things live
 | Path | What |

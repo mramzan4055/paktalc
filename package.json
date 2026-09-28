@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "check": "node scripts/check-site.mjs",
+    "check:redirects": "node scripts/verify-redirects-http.mjs",
     "serve:php": "php -S localhost:8080 -t out scripts/php-router.php"
   },
   "dependencies": {
